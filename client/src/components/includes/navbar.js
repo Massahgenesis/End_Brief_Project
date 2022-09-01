@@ -1,50 +1,91 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {FaUserFriends} from 'react-icons/fa';
+import {IconContext} from 'react-icons';
 
 function Navbar() {
 
     return (
         
-        <nav class="navbar navbar-expand-lg fixed-top bg-light">
-            <div class="container-fluid">
-                <Link to="/" class="navbar-brand">Massah Fundation</Link>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+        <nav className="navbar navbar-expand-lg fixed-top bg-light">
+            <IconContext.Provider value={{ size:40, color:'blue'}}>
+            <div className="top-bar smoothie hidden-xs">
+                <div className="container">
+                    <div className="clearfix">
+                        <ul className="list-inline social-links wow pull-right">
+                            <li>
+                                <a href="#"><i className="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i className="fa fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i className="fa fa-dribbble"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i className="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i className="fa fa-behance"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i className="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
 
-                        <li class="nav-item">
-                            <Link to="/" class="nav-link active">La Fondation</Link>
+                        <div className="pull-right text-right">
+                            <ul className="list-inline">
+                                <li>
+                                    <div><i className="fa fa-envelope-o"></i> email@domain.com</div>
+                                </li>
+                                <li>
+                                    <div className="meta-item"><i className="fa fa-mobile"></i> +44 8780 648 605</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container-fluid">
+                <Link to="/" className="navbar-brand">Massah Fundation</Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
+
+                        <li className="nav-item">
+                            <Link to="/" className="nav-link active">La Fondation</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link to="/projects" class="nav-link active">Nos Projets</Link>
+                        <li className="nav-item">
+                            <Link to="/projects"className="nav-link active">Nos Missions</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link to="/network" class="nav-link active">Notre Réseau</Link>
+                        <li className="nav-item">
+                            <Link to="/network" className="nav-link active">Notre Réseau</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link to="/parteners" class="nav-link active"> Nous Rejoindre</Link>
+                        <li className="nav-item">
+                            <Link to="/parteners" className="nav-link active"> Nous Rejoindre</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link to="/novel" class="nav-link active">Actualité</Link>
+                        <li className="nav-item">
+                            <Link to="/novel"className="nav-link active">Actualité</Link>
                         </li>
-                        <li class="nav-item">
-                            <Link to="/space" class="nav-link active">FOND</Link>
-                            <ul class="dropdown-menu">
-                                <Link to="/ founder" class="nav-link active">Vous êtes fondateur</Link>
-                                <li><hr class="dropdown-divider" /></li>
-                                <Link to="/donator" class="nav-link active">Vous êtes donateur</Link>
+                        <li className="nav-item">
+                            <Link to="/space" className="nav-link active"><FaUserFriends/></Link>
+                            <ul className="dropdown-menu">
+                                <Link to="/ founder" className="nav-link active">Vous êtes fondateur</Link>
+                                <li><hr className="dropdown-divider" /></li>
+                                <Link to="/donator" className="nav-link active">Vous êtes donateur</Link>
                             </ul>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    <form className="d-flex" role="search">
+                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button className="btn btn-outline-success" type="submit">Search</button>
                     </form>
-                    <button type="button" class="btn btn-danger">Faire un don</button>
+                    <button type="button" className="btn btn-danger">Faire un don</button>
                 </div>
             </div>
+            </IconContext.Provider>
         </nav>
     );
 

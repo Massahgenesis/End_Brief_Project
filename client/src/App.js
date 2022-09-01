@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import Navbar from './components/includes/navbar';
 import Fundation from './components/pages/fundation';
 import Projects from './components/pages/our-projects';
@@ -6,57 +7,43 @@ import Network from './components/pages/our-network';
 import Parteners from './components/pages/be-parteners';
 import Novel from './components/pages/actu';
 import Space from './components/pages/espace-acteurs';
-import Founder from './components/pages/acteurs/fondateur';
-import Donator from './components/pages/acteurs/donateur';
 import SubmitPage from './components/pages/submit';
-import { BrowserRouter as Router,Route } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './components/includes/footer';
+
 
 
 function App() {
   return (
     <Router>
 
-      <div>
-      <Navbar />
+     { <Navbar />}
 
-        <Route path="/">
-        <Fundation />
-        </Route>
+      <Routes>
 
-        <Route path="/projects">
-        <Projects />
-        </Route>
+        <Route path="/" element={<Fundation />} />
 
-        <Route path="/network">
-        <Network />
-        </Route>
-       
-        <Route path="/parteners">
-        <Parteners />
-        </Route>
 
-        <Route path="/novel">
-        <Novel />
-        </Route>
+        <Route path="/projects" element={<Projects />} />
 
-        <Route path="/space">
-        <Space />
-        </Route>
 
-        <Route path="/founder">
-        <Founder />
-        </Route>
+        <Route path="/network" element={<Network />} />
 
-        <Route path="/donator">
-        <Donator />
-        </Route>
 
-        <Route path="/submitPage">
-        <SubmitPage />
-        </Route>
-       
-      </div>
+        <Route path="/parteners" element={<Parteners />} />
+
+
+        <Route path="/novel" element={<Novel />} />
+
+
+        <Route path="/space" element={<Space />} />
+
+
+        <Route path="/submitPage" element={<SubmitPage />} />
+      </Routes>
+
+      { <Footer />}
+
     </Router>
 
   );
