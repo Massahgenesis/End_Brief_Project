@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Roboto:wght@100;300;400&display=swap');
+
+
+.carousel-caption{
+  margin-bottom: 400px;
+  font-size: 15px;
+  font-family: 'Roboto Slab', serif;
+  background-color: #0072BE;
+  padding: 40px;
+  
+}
+.oeuvre{
+  margin-left: 100px;
+}
 
 .our-mission{
 
@@ -31,7 +45,7 @@ background-color: #f2f2f2;
 }
 
 .color{
-height: 20px;
+height: 40px;
 width: 100%;
 background-color: #0072BE;
 }
@@ -62,31 +76,71 @@ background-color: #0072BE;
 padding-bottom: 80px;
 margin-top: 50px;
 margin-bottom: 50px;
+background-color: #f2f2f2;
 }
 
 .help{
 
   display: flex;
+  justify-content: space-around;
  
 }
 .row me-3{
   position: relative;
 }
 
+.equipe{
+  position: relative;
+  z-index: 0;
+}
+
+.equipe1{
+  background-image: url("./components/images/femmes_enceinte/equipe.webp");
+  background-size: cover;
+  height: 400px;
+  
+}
+
+.equipe2{
+  background-image: url("./components/images/femmes_enceinte/equipe2.jpg");
+  background-size: cover;
+  
+}
 .soutenir{
+  background-color: #0072be95;
+  padding: 30px 15px 30px 15px;
+  margin-top: 75px;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+}
+.soutenir .btn{
+  margin-left: 200px;
+}
+
+/* .soutenir{
+
   position: absolute;
   z-index: 1;
+  background-color:#0072be70 ;
+  color: white;
+  bottom: 50px;
+  left: 20px;
+  padding: 20px 10px 20px 10px;
+  height: 400px;
+  
+} */
+
+/* .soutenir{
+  position: absolute;
+  z-index: 2;
   background-color: #0072be70;
   color: white;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  left: 10%;
-  width: 300px;
+  padding-top: 15vh;
   font-size: 25px;
   font-weight: bolder;
   top: 3650px;
   font-family: poppins;
-}
+} */
 
 
 

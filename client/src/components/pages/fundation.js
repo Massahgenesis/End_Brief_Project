@@ -5,8 +5,6 @@ import psy from "../images/femmes_enceinte/psy.webp";
 import mereenfant from "../images/femmes_enceinte/mereenfant.jpg";
 import rencontre2 from "../images/femmes_enceinte/rencontre2.jpg";
 import maritime2 from "../images/femmes_enceinte/maritime2.jpg";
-import equipe from "../images/femmes_enceinte/equipe.webp";
-import equipe2 from "../images/femmes_enceinte/equipe2.jpg";
 import Actu from "./includes/events";
 import "../../App.css";
 
@@ -20,6 +18,8 @@ function Founder() {
 
             <Sliders />
 
+
+
             <section className="our-mission border-top">
                 <div className="container">
                     <div className="row">
@@ -28,7 +28,7 @@ function Founder() {
                                 Nos Missions
                             </h3>
                             <div className="underline mx-auto"></div>
-                            <p className="pb-20">
+                            <p className="pb-20 mb-5">
                                 "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
                             </p>
                             <div className="row row-cols-1 row-cols-md-3 g-4 hover-.rainy-ashville-gradient">
@@ -112,20 +112,19 @@ function Founder() {
                             </h3>
                             <div className="underline mx-auto font-family:poppins"></div>
                         </div>
-                        <div className="help">
-                            <div className="row">
-                                <div class="col-sm-5 col-md-6 col-lg-12">
-                                    <img src={equipe} className="d-block w-100 h-800"  alt="..." />
-                                </div>
+                        <p>
+                            Tous autant que nous sommes, nous avons toujours quelques choses à offrir. quelques soit vos compétences votre rang social,
+                            vous pouvez si vous le voulez de redonner vie à ces femmes par un mot,un geste, un sourire etc... Réjoignez nous en vue d'oeuvrer ensemble pour un monde meilleur
+                        </p>
+                        <div className="help mt-5">
+                            <div className="equipe1">
+
                                 <div className="soutenir">
                                     <h1>REJOIGNEZ NOTRE EQUIPE <br /> EN DEVENANT BENEVOLE</h1>
                                     <Link to="/parteners" style={{ background: "#F46A21", color: "white" }} className="btn btn shadow">Découvrir</Link>
                                 </div>
                             </div>
-                            <div className="row ms-3">
-                                <div className="col-sm-5 col-md-6 col-lg-12">
-                                    <img src={equipe2} className="d-block w-100 h-400" alt="..." />
-                                </div>
+                            <div className="equipe2">
                                 <div className="soutenir ">
                                     <h1>SOUTENEZ NOTRE CAUSE <br />EN FAISANT UN DON</h1>
                                     <Link to="/parteners" style={{ background: "#F46A21", color: "white" }} className="btn btn shadow">Découvrir</Link>
@@ -137,6 +136,15 @@ function Founder() {
             </section>
 
             < Actu />
+
+            <section className="give">
+                <div className="region  text-center">
+                    <p>
+                        <h3 className="maritime">Agissez avec nous !!!</h3>
+                    </p>
+                    <Link to="/submitPage" style={{ color: "#F46A21" }} className="btn bg-light shadow">FAITES UN DON</Link>
+                </div>
+            </section>
 
         </div>
     );
