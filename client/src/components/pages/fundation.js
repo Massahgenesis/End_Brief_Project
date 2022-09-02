@@ -28,10 +28,12 @@ function Founder() {
                                 Nos Missions
                             </h3>
                             <div className="underline mx-auto"></div>
-                            <p className="pb-20 mb-5">
-                                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            <p className="pb-20 mb-5"> Quand bien même la santé mentale jeune future mère
+                                est une priorité pour nous, celle des mères célibataires n'en est pas moindre pour nous même si nous ne mettons pas l'accent dessus. En effet nous prévoyons un programme de
+                                soutien également aux mères célibataires. Mis à part le soutien psychologique nous avons à coeur d'accompagnez ces femmes professionnellement parlant pour un meilleur
+                                épanouissement et pour se faire nous sommes contitués d'une équipe restreinte mais déterminée et éfficace.
                             </p>
-                            <div className="row row-cols-1 row-cols-md-3 g-4 hover-.rainy-ashville-gradient">
+                            <div className="row row-cols-1 row-cols-md-3 g-4 ">
                                 <div className="col-md-4">
                                     <div className="card shadow">
                                         <img src={psy} className="card-img-top" alt="..." />
@@ -112,7 +114,7 @@ function Founder() {
                             </h3>
                             <div className="underline mx-auto font-family:poppins"></div>
                         </div>
-                        <p>
+                        <p className="col-md-12 text-center">
                             Tous autant que nous sommes, nous avons toujours quelques choses à offrir. quelques soit vos compétences votre rang social,
                             vous pouvez si vous le voulez de redonner vie à ces femmes par un mot,un geste, un sourire etc... Réjoignez nous en vue d'oeuvrer ensemble pour un monde meilleur
                         </p>
@@ -138,7 +140,7 @@ function Founder() {
             < Actu />
 
             <section className="give">
-                <div className="region  text-center">
+                <div className="region  text-center mb-3" >
                     <p>
                         <h3 className="maritime">Agissez avec nous !!!</h3>
                     </p>
