@@ -120,7 +120,7 @@ function Projects() {
                                 <p  style={{ fontFamily: "poppins", fontSize: "20px" }}> Juriste & Informaticienne <br /> Présidente fondatrice de la fondation</p>
                             </div>
                         </div>
-                        <div className="underline w-100 " style={{ background: "#0072BE", fontFamily: "roboto slab" }}></div>
+                        <div className="underline w-100 " style={{ background: "#0072BE" }}></div>
                         <div className="row row-cols-1 row-cols-md-3 g-4 mb-3">
                             <div className="col-md-4">
                                 <div className="card shadow">

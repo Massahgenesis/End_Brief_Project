@@ -77,12 +77,12 @@ function Navbar() {
                                     <Link to="/donator" className="nav-link active">Vous êtes donateur</Link>
                                 </ul>
                             </li>
+
+                            <li className="nav-item">
+                                <Link to="/submitPage" className="nav-link active">Soumettez votre demande</Link>
+                            </li>
                         </ul>
-                        <form className="d-flex" role="search">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                        <button type="button" className="btn btn-danger">Faire un don</button>
+
                     </div>
                 </div>
             </IconContext.Provider>

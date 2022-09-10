@@ -13,6 +13,8 @@ import Footer from './components/includes/footer';
 
 
 
+
+
 function App() {
   return (
     <Router>
@@ -40,6 +42,7 @@ function App() {
 
 
         <Route path="/submitPage" element={<SubmitPage />} />
+
       </Routes>
 
       { <Footer />}
@@ -47,6 +50,7 @@ function App() {
     </Router>
 
   );
+  
 }
 
 export default App;
