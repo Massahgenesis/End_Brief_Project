@@ -14,6 +14,35 @@
   margin-left: 100px;
 }
 
+.border-bottom{
+  color:"#0072BE";
+ 
+}
+
+.nav-item{
+  margin-right: 15px;
+
+}
+
+
+.nav-item li :hover{
+  
+  background-color: #1089ff;
+  color: #f2f2f2;
+}
+.navbar-brand{
+  margin-right: 120px;
+}
+
+.ftco-top-social{
+  list-style: none;
+  display: flex;
+}
+
+
+
+
+
 .our-mission{
 
 padding-top: 40px;

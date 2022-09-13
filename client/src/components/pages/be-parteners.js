@@ -1,8 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // import equipe from "../images/femmes_enceinte/equipe.webp";
 
 function Parteners() {
+
+    let [state, setState] = useState({
+        loading: false,
+        partner: {
+            categorie: "",
+            statut: "",
+            lastName: "",
+            firstName: "",
+            identity: "",
+            gender: "",
+            domain: "",
+            title: "",
+            situation: "",
+            experience: "",
+            country: "",
+            town: "",
+            code: "",
+            number: "",
+            email: "",
+            reasons: "",
+            agree: ""
+        }
+    });
+
+    let createInput = (e) => {
+        setState({
+            ...state,
+            partner: {
+                ...state.partner,
+                [e.target.categorie]: e.target.value
+            }
+        });
+    };
+
+    let submitForm =async (e)=>{
+        e.preventDefault();
+        console.log(state);
+    };
+
+    let { partner} = state;
 
     return (
         <div>
@@ -56,166 +96,312 @@ function Parteners() {
                         <div className="col-12">
                             <div className="card card-registration card-registration-2" style={{ borderRadius: "15px" }}>
                                 <div className="card-body p-0">
-                                    <div className="row g-0">
-                                        <div className="col-lg-6">
-                                            <div className="p-5">
-                                                <h3 className="fw-normal mb-5" style={{ color: "#4835d4" }}> Infomation Générale</h3>
 
-                                                <div className="mb-4 pb-2">
-                                                    <select type="text" id="form3Examplev3" className="form-control form-control-lg select">
-                                                        <option value="1">veuillez choisir s'il vous plaît</option>
-                                                        <option value="2">Bénévolat</option>
-                                                        <option value="3">Don</option>
-                                                        <option value="4">Partenariat</option>
-                                                    </select>
-                                                    <label className="form-label" for="form3Examplev2">Vous postulez pour quelle catégorie?</label>
-                                                </div>
+                                    <form action="" method="post" onSubmit={submitForm}>
+                                        <div className="row g-0">
+                                            <div className="col-lg-6">
+                                                <div className="p-5">
+                                                    <h3 className="fw-normal mb-5" style={{ color: "#4835d4" }}> Infomation Générale</h3>
 
-                                                <div className="mb-4 pb-2">
-                                                    <select type="text" id="form3Examplev3" className="form-control form-control-lg select">
-                                                        <option value="1">veuillez choisir s'il vous plaît</option>
-                                                        <option value="2">Particulier</option>
-                                                        <option value="3">Association</option>
-                                                        <option value="4">ONG</option>
-                                                    </select>
-                                                    <label className="form-label" for="form3Examplev2">Votre identité juridique</label>
-                                                </div>
+                                                    <div className="mb-4 pb-2">
+                                                        <label className="form-label" htmlFor="categorie">Vous postulez pour quelle catégorie?</label>
+                                                        <select
+                                                            type="select"
+                                                            id="categorie"
+                                                            name="categorie"
+                                                            className="form-control form-control-lg select"
+                                                            value={partner.categorie}
+                                                            onChange = {createInput}
+                                                            required = {true}>
 
-                                                <div className="row">
-                                                    <div className="col-md-6 mb-4 pb-2">
-                                                        <div className="form-outline">
-                                                            <input type="text" id="form3Examplev2" className="form-control form-control-lg" />
-                                                            <label className="form-label" for="form3Examplev2">Nom</label>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-6 mb-4 pb-2">
-                                                        <div className="form-outline">
-                                                            <input type="text" id="form3Examplev3" className="form-control form-control-lg" />
-                                                            <label className="form-label" for="form3Examplev3">Prénom</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div className='row'>
-
-                                                    <div className="col-md-6 mb-4 pb-2">
-                                                        <div className="form-outline">
-                                                            <input type="text" id="form3Examplev4" className="form-control form-control-lg" />
-                                                            <label className="form-label" for="form3Examplev4">Nationalité</label>
-                                                        </div>
-                                                    </div>
-                                                    <div className=" col-md-6 mb-4 pb-2 ">
-                                                        <select className=" form-control form-control-lg">
-                                                            <option value="1">veuillez choisir s'il vous plaît</option>
-                                                            <option value="2">Féminin</option>
-                                                            <option value="2">Masculin</option>
+                                                            <option >veuillez choisir s'il vous plaît</option>
+                                                            <option value="Bénévolat">Bénévolat</option>
+                                                            <option value="Don">Don</option>
+                                                            <option value="Partenariat">Partenariat</option>
                                                         </select>
-                                                        <label className="form-label" for="form3Examplev4">Genre</label>
+
                                                     </div>
 
-                                                </div>
+                                                    <div className="mb-4 pb-2">
+                                                        <label className="form-label" htmlFor="statut">Votre identité juridique</label>
+                                                        <select
+                                                            type="text"
+                                                            id="statut"
+                                                            name="statut"
+                                                            className="form-control form-control-lg select"
+                                                            value={partner.statut}
+                                                            onChange = {createInput}
+                                                            required = {true}>
 
-                                                <div className="row">
-                                                    <div className="col-md-6 mb-4 pb-2">
-                                                        <div className="form-outline">
-                                                            <input type="text" id="form3Examplev2" className="form-control form-control-lg" />
-                                                            <label className="form-label" for="form3Examplev2">Domaine</label>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-md-6 mb-4 pb-2">
-                                                        <div className="form-outline">
-                                                            <input type="text" id="form3Examplev3" className="form-control form-control-lg" />
-                                                            <label className="form-label" for="form3Examplev3">Titre</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div className="row">
-                                                    <div className="col-md-6">
-                                                        <select className="form-control form-control-lg">
                                                             <option value="1">veuillez choisir s'il vous plaît</option>
-                                                            <option value="2">Employé(e) à temps plein</option>
-                                                            <option value="3">Employé(e) à temps partiel</option>
-                                                            <option value="4">Indépendant(e) </option>
-                                                            <option value="5">Entrepreneur(e) </option>
-                                                            <option value="6">Etudiant(e) </option>
+                                                            <option value="2">Particulier</option>
+                                                            <option value="3">Association</option>
+                                                            <option value="4">ONG</option>
                                                         </select>
-                                                        <label className="form-label" for="form3Examplev5">Quel est votre situation professionnelle actuelle?</label>
+
                                                     </div>
-                                                    <div className="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
-                                                        <div className="form-outline">
-                                                            <input type="text" id="form3Examplev5" className="form-control form-control-lg" />
-                                                            <label className="form-label" for="form3Examplev5">Nombre d'années d'expérience professionnelle</label>
+
+                                                    <div className="row">
+                                                        <div className="col-md-6 mb-4 pb-2">
+                                                            <div className="form-outline">
+                                                                <label className="form-label" htmlFor="lastName">Nom</label>
+                                                                <input
+                                                                    type="text"
+                                                                    id="lastName"
+                                                                    name="lastName"
+                                                                    className="form-control form-control-lg"
+                                                                    value={partner.lastName}
+                                                                    onChange = {createInput}
+                                                                    required = {true} />
+
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-md-6 mb-4 pb-2">
+                                                            <div className="form-outline">
+                                                                <label className="form-label" htmlFor="firstName">Prénom</label>
+                                                                <input
+                                                                    type="text"
+                                                                    id="firstName"
+                                                                    name="firstName"
+                                                                    className="form-control form-control-lg"
+                                                                    value={partner.firstName}
+                                                                    onChange = {createInput}
+                                                                    required = {true} />
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className='row'>
+
+                                                        <div className="col-md-6 mb-4 pb-2">
+                                                            <div className="form-outline">
+                                                                <label className="form-label" htmlFor="identity">Nationalité</label>
+                                                                <input
+                                                                    type="text"
+                                                                    id="identity"
+                                                                    name="identity"
+                                                                    className="form-control form-control-lg"
+                                                                    value={partner.identity}
+                                                                    onChange = {createInput}
+                                                                    required = {true} />
+
+                                                            </div>
+                                                        </div>
+                                                        <div className=" col-md-6 mb-4 pb-2 ">
+                                                            <label className="form-label" htmlFor="gender">Genre</label>
+
+                                                            <select
+                                                                type="text"
+                                                                id="gender"
+                                                                name="gender"
+                                                                className=" form-control form-control-lg"
+                                                                value={partner.gender}
+                                                                onChange = {createInput}
+                                                                required = {true}>
+
+                                                                <option value="1">veuillez choisir s'il vous plaît</option>
+                                                                <option value="Féminin">Féminin</option>
+                                                                <option value="Masculin">Masculin</option>
+                                                                <option value="Autres">Autres</option>
+                                                            </select>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div className="row">
+                                                        <div className="col-md-6 mb-4 pb-2">
+                                                            <div className="form-outline">
+                                                                <label className="form-label" htmlFor="domain">Domaine</label>
+                                                                <input
+                                                                    type="text"
+                                                                    id="domain"
+                                                                    name="domain"
+                                                                    className="form-control form-control-lg"
+                                                                    value={partner.domain}
+                                                                    onChange = {createInput}
+                                                                    required = {true} />
+
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-md-6 mb-4 pb-2">
+                                                            <div className="form-outline">
+                                                                <label className="form-label" htmlFor="title">Titre</label>
+                                                                <input
+                                                                    type="text"
+                                                                    id="title"
+                                                                    name="title"
+                                                                    className="form-control form-control-lg" 
+                                                                    value={partner.title}
+                                                                    onChange = {createInput}
+                                                                    required = {true}/>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="row">
+                                                        <div className="col-md-6">
+                                                            <label className="form-label" htmlFor="situation">Quel est votre situation professionnelle actuelle?</label>
+                                                            <select
+                                                                type="text"
+                                                                id="situation"
+                                                                name="situation"
+                                                                className="form-control form-control-lg"
+                                                                value={partner.situation}
+                                                                onChange = {createInput}
+                                                                required = {true}>
+
+                                                                <option >veuillez choisir s'il vous plaît</option>
+                                                                <option value="Employé(e) à temps plein">Employé(e) à temps plein</option>
+                                                                <option value="Employé(e) à temps partiel">Employé(e) à temps partiel</option>
+                                                                <option value="Indépendant(e)">Indépendant(e) </option>
+                                                                <option value="Entrepreneur(e)">Entrepreneur(e) </option>
+                                                                <option value="Etudiant(e)">Etudiant(e) </option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div className="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
+                                                            <div className="form-outline">
+                                                                <label className="form-label" htmlFor="experience">Nombre d'années d'expérience professionnelle</label>
+                                                                <input
+                                                                    type="text"
+                                                                    id="experience"
+                                                                    name="experience"
+                                                                    className="form-control form-control-lg"
+                                                                    value={partner.experience}
+                                                                    onChange = {createInput}
+                                                                    required = {true} />
+
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
 
-                                        <div className="col-lg-6  text-white" style={{ background: "#0072BE", fontSize: "20px", fontFamily: "poppins", }}>
-                                            <div className="p-5">
-                                                <h3 className="fw-normal mb-5">Détails de contact</h3>
+                                            <div className="col-lg-6  text-white" style={{ background: "#0072BE", fontSize: "20px", fontFamily: "poppins", }}>
+                                                <div className="p-5">
+                                                    <h3 className="fw-normal mb-5">Détails de contact</h3>
 
-                                                <div className="mb-4 pb-2">
-                                                    <div className="form-outline form-white">
-                                                        <input type="text" id="form3Examplea6" className="form-control form-control-lg" />
-                                                        <label className="form-label" for="form3Examplea6">Pays de résidence actuelle</label>
-                                                    </div>
-                                                </div>
-
-                                                <div className="mb-4 pb-2">
-                                                    <div className="form-outline form-white">
-                                                        <input type="text" id="form3Examplea2" className="form-control form-control-lg" />
-                                                        <label className="form-label" for="form3Examplea2">Ville</label>
-                                                    </div>
-                                                </div>
-
-                                                <div className="row">
-                                                    <div className="col-md-5 mb-4 pb-2">
-
+                                                    <div className="mb-4 pb-2">
                                                         <div className="form-outline form-white">
-                                                            <input type="text" id="form3Examplea7" className="form-control form-control-lg" />
-                                                            <label className="form-label" for="form3Examplea7">Code +</label>
+                                                            <label className="form-label" htmlFor="country">Pays de résidence actuelle</label>
+                                                            <input
+                                                                type="text"
+                                                                id="country"
+                                                                name="country"
+                                                                className="form-control form-control-lg" 
+                                                                value={partner.country}
+                                                                onChange = {createInput}
+                                                                required = {true}/>
+
                                                         </div>
-
                                                     </div>
-                                                    <div className="col-md-7 mb-4 pb-2">
 
+                                                    <div className="mb-4 pb-2">
                                                         <div className="form-outline form-white">
-                                                            <input type="text" id="form3Examplea8" className="form-control form-control-lg" />
-                                                            <label className="form-label" for="form3Examplea8">Numéro de téléphone</label>
+                                                            <label className="form-label" htmlFor="town">Ville</label>
+                                                            <input
+                                                                type="text"
+                                                                id="town"
+                                                                name="town"
+                                                                className="form-control form-control-lg" 
+                                                                value={partner.town}
+                                                                onChange = {createInput}
+                                                                required = {true}/>
+
                                                         </div>
+                                                    </div>
+
+                                                    <div className="row">
+                                                        <div className="col-md-5 mb-4 pb-2">
+
+                                                            <div className="form-outline form-white">
+                                                                <label className="form-label" htmlFor="code">Code +</label>
+                                                                <input
+                                                                    type="text"
+                                                                    id="code"
+                                                                    name="code"
+                                                                    className="form-control form-control-lg"
+                                                                    value={partner.code}
+                                                                    onChange = {createInput}
+                                                                    required = {true} />
+
+                                                            </div>
+
+                                                        </div>
+                                                        <div className="col-md-7 mb-4 pb-2">
+
+                                                            <div className="form-outline form-white">
+                                                                <label className="form-label" htmlFor="number">Numéro de téléphone</label>
+                                                                <input
+                                                                    type="text"
+                                                                    id="number"
+                                                                    name="number"
+                                                                    className="form-control form-control-lg"
+                                                                    value={partner.number}
+                                                                    onChange = {createInput}
+                                                                    required = {true} />
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="mb-4">
+                                                        <div className="form-outline form-white">
+                                                            <label className="form-label" htmlFor="email">Votre Email</label>
+                                                            <input
+                                                                type="text"
+                                                                id="email"
+                                                                name="email"
+                                                                className="form-control form-control-lg"
+                                                                value={partner.email}
+                                                                onChange = {createInput}
+                                                                required = {true} />
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="form-outline mb-4">
+                                                        <label className="form-label" htmlFor="reasons">Dites nous vos motivations à vouloir agir avec nous !</label>
+                                                        <textarea
+                                                            type=""
+                                                            id="reasons"
+                                                            name="reasons"
+                                                            className="form-control"
+                                                            rows="10"
+                                                            value={partner.reasons}
+                                                            onChange = {createInput}
+                                                            required = {true}></textarea>
 
                                                     </div>
-                                                </div>
 
-                                                <div className="mb-4">
-                                                    <div className="form-outline form-white">
-                                                        <input type="text" id="form3Examplea9" className="form-control form-control-lg" />
-                                                        <label className="form-label" for="form3Examplea9">Votre Email</label>
+                                                    <div className="form-check d-flex justify-content-start mb-4 pb-3">
+                                                        <input
+                                                            className="form-check-input me-3"
+                                                            type="checkbox"
+                                                            id="agree"
+                                                            name="agree"
+                                                            value={partner.agree}
+                                                            onChange = {createInput}
+                                                            required = {true}
+                                                        />
+                                                        <label className="form-check-label text-white" htmlFor="agree">
+                                                            I do accept the <a href="#!" className="text-white"><u>Terms and Conditions</u></a> of your
+                                                            site.
+                                                        </label>
                                                     </div>
-                                                </div>
 
-                                                <div className="form-outline mb-4">
-                                                    <textarea className="form-control" id="form4Example3" rows="4"></textarea>
-                                                    <label className="form-label" for="form4Example3">Dites nous vos motivations à vouloir agir avec nous !</label>
+                                                    <button type="button" className="btn  btn-lg ms-2" style={{ background: "#F46A21", color: "white" }}
+                                                        data-mdb-ripple-color="dark">Envoyez</button>
                                                 </div>
-
-                                                <div className="form-check d-flex justify-content-start mb-4 pb-3">
-                                                    <input className="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />
-                                                    <label className="form-check-label text-white" for="form2Example3">
-                                                        I do accept the <a href="#!" className="text-white"><u>Terms and Conditions</u></a> of your
-                                                        site.
-                                                    </label>
-                                                </div>
-
-                                                <button type="button" className="btn  btn-lg ms-2"style={{ background: "#F46A21", color: "white" }}
-                                                    data-mdb-ripple-color="dark">Envoyez</button>
 
                                             </div>
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

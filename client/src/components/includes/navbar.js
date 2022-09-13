@@ -1,92 +1,73 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaUserFriends } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaFacebookSquare, FaPhoneAlt, FaSistrix } from 'react-icons/fa';
+import { } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 
 function Navbar() {
 
     return (
 
-        <nav className="navbar navbar-expand-lg  bg-light ">
-            <IconContext.Provider value={{ size: 40, color: '#0072BE' }}>
-                <div className="top-bar smoothie hidden-xs">
-                    <div className="container">
-                        <div className="clearfix">
-                            <ul className="list-inline social-links wow pull-right">
-                                <li>
-                                    <a href="#"><i className="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i className="fa fa-pinterest"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i className="fa fa-dribbble"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i className="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i className="fa fa-behance"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i className="fa fa-linkedin"></i></a>
-                                </li>
-                            </ul>
-
-                            <div className="pull-right text-right">
-                                <ul className="list-inline">
-                                    <li>
-                                        <div><i className="fa fa-envelope-o"></i> email@domain.com</div>
-                                    </li>
-                                    <li>
-                                        <div className="meta-item"><i className="fa fa-mobile"></i> +44 8780 648 605</div>
-                                    </li>
-                                </ul>
+        <div>
+            <div className="border-bottom  bg-c-light"   >
+                <div className="container">
+                    
+                        <div className=" d-flex ">
+                            <div className="p-2 flex-grow-1">
+                                <p className="mt-3">
+                                    <FaPhoneAlt size="25px" color="#0072BE"/> Contact : (+228) 97052081
+                                </p>
+                            </div>
+                            <div className=' p-2 mt-3'>
+                                <form className="d-flex" role="search">
+                                    <input className="form-control me-1" type="search" placeholder="Search" aria-label="Search" />
+                                    <button className="btn btn" type="submit" ><FaSistrix size="20px" color="#0072BE" /></button>
+                                </form>
+                            </div>
+                            <div className="p-2 mt-4" >
+                                <a target="_blank" className='' href="https://web.facebook.com/" rel="noreferrer" value="link" data-toggle="tooltip" data-placement="top" title="Facebook"><span><FaFacebookSquare size="27px" color="#0072BE" /></span></a>
+                                <a target="_blank" className='ms-3' href="https://www.linkedin.com/feed/" rel="noreferrer" value="link" data-toggle="tooltip" data-placement="top" title="Linkedin"><span><FaLinkedin size="27px" color="#0072BE"/></span></a>
+                                <a target="_blank" className='ms-3' href="https://twitter.com/home" rel="noreferrer" value="link" data-toggle="tooltip" data-placement="top" title="Facebook"><span><FaTwitter size="27px" color="#0072BE" /></span></a>
                             </div>
                         </div>
-                    </div>
+                    
                 </div>
-                <div className="container-fluid">
-                    <Link to="/" className="navbar-brand">Massah Fundation</Link>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav">
+            </div>
 
-                            <li className="nav-item">
-                                <Link to="/" className="nav-link active">La Fondation</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/projects" className="nav-link active">Nos Missions</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/network" className="nav-link active">Notre Réseau</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/parteners" className="nav-link active"> Nous Rejoindre</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/novel" className="nav-link active">Actualité</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/space" className="nav-link active"><FaUserFriends /></Link>
-                                <ul className="dropdown-menu">
-                                    <Link to="/ founder" className="nav-link active">Vous êtes fondateur</Link>
-                                    <li><hr className="dropdown-divider" /></li>
-                                    <Link to="/donator" className="nav-link active">Vous êtes donateur</Link>
-                                </ul>
-                            </li>
+            <nav className="navbar navbar-expand-lg  bg-c-light " style={{ color: "#0072BE" }}>
+                <IconContext.Provider value={{ size: 40, color: '#0072BE' }}>
 
-                            <li className="nav-item">
-                                <Link to="/submitPage" className="nav-link active">Soumettez votre demande</Link>
-                            </li>
-                        </ul>
+                    <div className="container" >
+                        <Link to="/" className="navbar-brand " >Massah Fundation</Link>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse" id="navbarNav">
+                            <ul className="navbar-nav">
 
+                                <li className="nav-item">
+                                    <Link to="/" className="nav-link " style={{ color: "#0072BE", fontSize: "19px" }}>La Fondation</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/projects" className="nav-link " style={{ color: "#0072BE", fontSize: "19px" }}>Nos Missions</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/network" className="nav-link " style={{ color: "#0072BE", fontSize: "19px" }}>Notre Réseau</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/parteners" className="nav-link " style={{ color: "#0072BE", fontSize: "19px" }}> Nous Rejoindre</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/novel" className="nav-link " style={{ color: "#0072BE", fontSize: "19px" }}>Actualité</Link>
+                                </li>
+                            </ul>
+                            <Link to="/submitPage" style={{ background: "#F46A21", color: "white", fontSize: "20px", marginLeft: "90px" }} className="btn btn shadow me-auto" >Soumettez votre demande</Link>
+
+                        </div>
                     </div>
-                </div>
-            </IconContext.Provider>
-        </nav>
+                </IconContext.Provider>
+            </nav>
+        </div>
     );
 
 }
