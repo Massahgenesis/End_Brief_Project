@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {UsersService} from '../../services/UsersService';
 
 // import equipe from "../images/femmes_enceinte/equipe.webp";
 
@@ -24,7 +25,7 @@ function Parteners() {
             email: "",
             reasons: "",
             agree: ""
-        }
+        },
     });
 
     let createInput = (e) => {
@@ -32,7 +33,7 @@ function Parteners() {
             ...state,
             partner: {
                 ...state.partner,
-                [e.target.categorie]: e.target.value
+                [e.target.name]: e.target.value
             }
         });
     };
@@ -46,6 +47,7 @@ function Parteners() {
 
     return (
         <div>
+             {/* <pre> {JSON.stringify (state.partner)} </pre> */}
             <section className="py-" style={{ background: "#0072BE", color: "white" }}>
                 <div className="container">
                     <div className="row p-3">
@@ -96,6 +98,7 @@ function Parteners() {
                         <div className="col-12">
                             <div className="card card-registration card-registration-2" style={{ borderRadius: "15px" }}>
                                 <div className="card-body p-0">
+                                   
 
                                     <form action="" method="post" onSubmit={submitForm}>
                                         <div className="row g-0">
@@ -200,7 +203,7 @@ function Parteners() {
                                                                 onChange = {createInput}
                                                                 required = {true}>
 
-                                                                <option value="1">veuillez choisir s'il vous plaît</option>
+                                                                <option >veuillez choisir s'il vous plaît</option>
                                                                 <option value="Féminin">Féminin</option>
                                                                 <option value="Masculin">Masculin</option>
                                                                 <option value="Autres">Autres</option>
@@ -273,7 +276,6 @@ function Parteners() {
                                                                     value={partner.experience}
                                                                     onChange = {createInput}
                                                                     required = {true} />
-
                                                             </div>
                                                         </div>
                                                     </div>
@@ -395,7 +397,7 @@ function Parteners() {
                                                         </label>
                                                     </div>
 
-                                                    <button type="button" className="btn  btn-lg ms-2" style={{ background: "#F46A21", color: "white" }}
+                                                    <button type="submit" className="btn  btn-lg ms-2" style={{ background: "#F46A21", color: "white" }}
                                                         data-mdb-ripple-color="dark">Envoyez</button>
                                                 </div>
 

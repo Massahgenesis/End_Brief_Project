@@ -13,5 +13,10 @@ export class UsersService {
         let dataUrl = '$ {this.serverUrl} ';
         return axios.post(dataUrl, partner)
     }
-}
+
+    static createSubscriber(subscriber){
+        let dataUrl = '$ {this.serverUrl} ';
+        return axios.post(dataUrl, subscriber )
+    }
+} 
 

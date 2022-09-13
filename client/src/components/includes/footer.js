@@ -1,10 +1,36 @@
-import React from "react";
-import { Link } from 'react-router-dom';
+import React, {useState} from "react";
 import { FaMapMarkerAlt, FaTwitter, FaLinkedin, FaFacebookSquare, FaEnvelope, FaMobileAlt } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 
 
 function Footer() {
+
+    let [state, setState] =useState({
+        loading:false,
+        subscriber:{
+            mail:""
+        }
+    });
+
+    let updateInput= (e) =>{
+        setState({
+            ...state,
+            subscriber: {
+                ...state.subscriber,
+                [e.target.name] : e.target.value
+            }
+        });
+    }
+
+    let submitForm = async (e) =>{
+        e.preventDefault();
+        console.log(state);
+    }
+
+    let {subscriber} = state;
+
+
+
     return (
 
         <div>
@@ -79,9 +105,17 @@ function Footer() {
                             </div>
                             <div className="col-md-5 mb-md-0 mb-4">
                                 <h2 className="footer-heading">Souscrire</h2>
-                                <form action="#" className="subscribe-form">
+                                <form action="/signup" method="POST" className="subscribe-form" onSubmit={submitForm}>
                                     <div className="form-group d-flex">
-                                        <input type="text" className="form-control rounded-left" placeholder="Entrez votre adress mail" />
+                                        <input 
+                                        type="text"
+                                        id="mail"
+                                        name="mail" 
+                                        value={subscriber.news}
+                                        onChange = {updateInput}
+                                        required
+                                        className="form-control rounded-left" 
+                                        placeholder="Entrez votre adress mail" />
                                         <button type="submit" className="form-control submit rounded-right">Souscrire</button>
                                     </div>
                                     <span className="subheading">S'abonner pour récevoir des nouvelles</span>

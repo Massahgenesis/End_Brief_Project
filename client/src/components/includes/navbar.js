@@ -28,6 +28,8 @@ function Navbar() {
                                 <a target="_blank" className='' href="https://web.facebook.com/" rel="noreferrer" value="link" data-toggle="tooltip" data-placement="top" title="Facebook"><span><FaFacebookSquare size="27px" color="#0072BE" /></span></a>
                                 <a target="_blank" className='ms-3' href="https://www.linkedin.com/feed/" rel="noreferrer" value="link" data-toggle="tooltip" data-placement="top" title="Linkedin"><span><FaLinkedin size="27px" color="#0072BE"/></span></a>
                                 <a target="_blank" className='ms-3' href="https://twitter.com/home" rel="noreferrer" value="link" data-toggle="tooltip" data-placement="top" title="Facebook"><span><FaTwitter size="27px" color="#0072BE" /></span></a>
+                                <div id="google_translate_element"></div>
+
                             </div>
                         </div>
                     

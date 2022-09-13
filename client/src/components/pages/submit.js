@@ -20,7 +20,7 @@ let SubmitPage =() => {
             region:"",
             town:"",
             message:"",
-            groupeID : ""      
+                 
          },
 
     });
@@ -214,7 +214,7 @@ let SubmitPage =() => {
                                                     value={user.situation}
                                                     onChange = {updateInput}
                                                     required =  {true}  >
-                                                        
+
                                                         <option >veuillez choisir s'il vous plaît</option>
                                                         <option value="Enceinte et seule">Enceinte et seule</option>
                                                         <option value="Enceinte, seule et dépressive">Enceinte, seule et dépressive</option>
