@@ -1,8 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const path = require('path');
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+require('dotenv').config();
 
 
 const app = express();
@@ -24,17 +24,14 @@ app.get("/", (req, res) => {
     res.json({ message: "bienvenue sur notre site" });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, console.log(`server started on ${PORT}`));
 
 //conneccting database
 const db = require("./app/models");
-mongoose
-    .connect(db.url, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    })
+db.mongoose
+    .connect(process.env.URL)
     .then(() => {
         console.log("connecté à la base de donées !");
     })

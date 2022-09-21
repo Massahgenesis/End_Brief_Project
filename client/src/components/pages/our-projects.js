@@ -16,10 +16,12 @@ function Projects() {
 
     return (
         <div >
+
+            {/* premiere section de la apge nos missions traitant le heading de la page */}
             <section className="py-" style={{ background: "#0072BE", color: "white" }}>
 
                 <div className="container">
-                    <div className="row p-3">
+                    <div className="row p-3 barre">
                         <div className="col-md-4 my-auto">
                             <h4>Nos Missions</h4>
                         </div>
@@ -32,7 +34,10 @@ function Projects() {
                 </div>
             </section>
 
-            <section className="section bg-c-light mt-5">
+            {/* fin de la premiere section */}
+
+            {/* debut de la section nos missions definissant nos activités */}
+            <section className="section mission bg-c-light mt-5">
                 <div className="container">
                     <h5 className="main-heading">Nos Missions</h5>
                     <div className="underline "></div>
@@ -40,7 +45,7 @@ function Projects() {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 text-center">
-                            <p className="mb-5" style={{ fontFamily: "poppins", fontSize: "20px" }}>
+                            <p className="mb-5 mission" style={{ fontFamily: "poppins", fontSize: "20px" }}>
                                 La fondation Massah est née en 2022, du désir et de la vonlonté de Mlle N'DJAO Massah de venir en aide aux jeunes filles dans des conditions
                                 très peu confortable,enceinte et célibataire, laissée à elles mêmes ou parfois à la charge des parents. Ceci étant, tout se passe bien pour certaines
                                 d'entre elles qui bénéficient du soutien sans faille de leurs proches, soutien qui peut-être aussi bien financier,spirituel et moral. Cependnant, il y
@@ -55,43 +60,43 @@ function Projects() {
                     </div>
                     <div className="row p-5 shadow mt-2" style={{backgroundColor:"#0072be4d"}}>
                         <div className="col-md-4 ">
-                            <img src={psy} className="card-img" alt="..." />
+                            <img src={psy} className="card-img w-100" alt="..." />
                         </div>
                         <div className="col-md-6 align-self-end">
-                            <h2 className="mt-5" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> Soutien psychologige</h2>
-                            <p style={{ fontFamily: "poppins", fontSize: "18px" }}> Nous offrons un soutien psychologique aux jeunes futures mères qui ont subi un choc émotionnel du fait de leur état et qui 
+                            <h2 className="mt-5 title-mission" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> Soutien psychologige</h2>
+                            <p className="text-mission" style={{ fontFamily: "poppins", fontSize: "18px" }}> Nous offrons un soutien psychologique aux jeunes futures mères qui ont subi un choc émotionnel du fait de leur état et qui 
                             sombrent dans la dépression, se mettanten danger et le foeutus également. Il s'agit des moments d'échanges, d'écoutes entre le médecin psychologue et la jeune femme.</p>
                         </div>
                     </div>
                     <div className="row p-5 shadow mt-2" style={{backgroundColor:"#0072be4d"}}>
                         <div className="col-md-4 ">
-                            <img src={mereenfant} className="card-img" alt="..." />
+                            <img src={mereenfant} className="card-img w-100" alt="..." />
                         </div>
                         <div className="col-md-6 align-self-end">
-                            <h2 className="mb-2" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> Bien-être mental et suivi</h2>
-                            <p style={{ fontFamily: "poppins", fontSize: "18px" }}>  Aussi bien pendant la grossesse,qu'apres la jeune fille a toujours besoin d'être soutenu , ce sera toujours des séances
+                            <h2 className="mb-2 title-mission" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> Bien-être mental et suivi</h2>
+                            <p  className="text-mission" style={{ fontFamily: "poppins", fontSize: "18px" }}>  Aussi bien pendant la grossesse,qu'apres la jeune fille a toujours besoin d'être soutenu , ce sera toujours des séances
                             de partage avec le médécin psychologue, la sage-femme et l'expert en developpement personnelle en vue de redonner confiance à la mère; Ce qui va également impacter positivement 
                             le nouveau du fait que la mère confiante, offrira à celui-ci un bon épanouissementet une meilleure éducation, gage d'un monde meilleur.</p>
                         </div>
                     </div>
                     <div className="row p-5 shadow mt-2" style={{backgroundColor:"#0072be4d"}}>
                         <div className="col-md-4 ">
-                            <img src={rencontre2} className="card-img" alt="..." />
+                            <img src={rencontre2} className="card-img w-100" alt="..." />
                         </div>
                         <div className="col-md-6 align-self-end">
-                            <h2 className="mb-2" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> Rencontre et sensibilisation</h2>
-                            <p style={{ fontFamily: "poppins", fontSize: "18px" }}>  Organisation des campagnes de sensibilisation regroupant toutes femmes, de toute tranche d'âge
+                            <h2 className="mb-2 title-mission" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> Rencontre et sensibilisation</h2>
+                            <p className="text-mission" style={{ fontFamily: "poppins", fontSize: "18px" }}>  Organisation des campagnes de sensibilisation regroupant toutes femmes, de toute tranche d'âge
                             sur les dispositions à prendre afin d' éviter ces situations inconfortables ou du moins comment minimiser les conséquences. Aussi nous interagissons avec 
                             des ONG et associations luttant pour la cause des mères célibataires.</p>
                         </div>
                     </div>
                     <div className="row p-5 shadow mt-2" style={{backgroundColor:"#0072be4d"}}>
                         <div className="col-md-4 ">
-                            <img src={fille} className="card-img" alt="..." />
+                            <img src={fille} className="card-img w-100" alt="..." />
                         </div>
                         <div className="col-md-6 align-self-end">
-                            <h2 className="mb-2" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> Formation entrepreuneriale et insertion professionnelle</h2>
-                            <p style={{ fontFamily: "poppins", fontSize: "18px" }}>  
+                            <h2 className="mb-2 title-mission" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> Formation entrepreuneriale et insertion professionnelle</h2>
+                            <p  className="text-mission" style={{ fontFamily: "poppins", fontSize: "18px" }}>  
                             Orientation et accompagnement de la mère célibataire dans le choix du métier qu'elle voudrait faire, formation et suivi durant la formation et insertion professionnelle
                             </p>
                         </div>
@@ -99,12 +104,16 @@ function Projects() {
                 </div>
             </section>
 
+            {/* fin de la section nos missions */}
+
+            {/* introduction d'une section, faisant mention de nootre équipe */}
             <section className="team bg-light border-bottom mt-5">
                 <div className="container">
+                <h1 className="main-heading mb-3 mt-5" >Notre Équipe</h1>
+                        <div className="underline "></div>
                     <div className="row">
-                        <h1 className="main-heading mb-5 mt-5" >Notre Équipe</h1>
                         <div className="col-md-12 text-center">
-                            <p className="mb-5" style={{ fontFamily: "poppins", fontSize: "20px" }}>
+                            <p className="mb-3 mt-0 text-team" style={{ fontFamily: "poppins", fontSize: "20px" }}>
                                 Afin de rendre cette mission possible, nous disposons d'une grande équipe avertie, avisée et déterminée.
                                 Cela dit, nous voici en équipe restreinte
                             </p>
@@ -112,21 +121,21 @@ function Projects() {
                     </div>
                     <div className="container">
                         <div className="row ">
-                            <div className="col-md-4 ">
-                                <img src={massah} className="shadow" alt="..." />
+                            <div className="col-md-4  ">
+                                <img src={massah} className="shadow w-100" alt="..." />
                             </div>
                             <div className="col-md-6 align-self-end">
-                                <h2 className="" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "20px" }}> N'DJAO Massah</h2>
-                                <p  style={{ fontFamily: "poppins", fontSize: "20px" }}> Juriste & Informaticienne <br /> Présidente fondatrice de la fondation</p>
+                                <h2 className=" mt-3 massah" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "20px" }}> N'DJAO Massah</h2>
+                                <p  className="card-text" style={{ fontFamily: "poppins", fontSize: "20px" }}> Juriste & Informaticienne <br /> Présidente fondatrice de la fondation</p>
                             </div>
                         </div>
                         <div className="underline w-100 " style={{ background: "#0072BE" }}></div>
                         <div className="row row-cols-1 row-cols-md-3 g-4 mb-3">
                             <div className="col-md-4">
                                 <div className="card shadow">
-                                    <img src={psy_femme} className="card-img-top" alt="..." />
+                                    <img src={psy_femme} className="card-img-top w-100" alt="..." />
                                     <div className="card-body">
-                                        <h5 classNames="card-text" style={{ color: "#0072BE", fontFamily: "roboto slab" }}> Mme MAYA Leleng</h5>
+                                        <h5 className="card-text" style={{ color: "#0072BE", fontFamily: "roboto slab" }}> Mme MAYA Leleng</h5>
                                         <p className="card-text" style={{ fontFamily: "poppins", fontSize: "20px" }}>
                                             Docteur psychologue et co-fondatrice de la fondation.
                                         </p>
@@ -135,7 +144,7 @@ function Projects() {
                             </div>
                             <div className="col-md-4">
                                 <div className="card shadow">
-                                    <img src={membre1} className="card-img-top" alt="..." />
+                                    <img src={membre1} className="card-img-top w-100" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab" }}> Mr ADJE Komla</h5>
                                         <p className="card-text" style={{ fontFamily: "poppins", fontSize: "20px" }}>
@@ -144,9 +153,9 @@ function Projects() {
                                     </div>
                                 </div>
                             </div>
-                            <div classNames="col-md-4">
+                            <div className="col-md-4">
                                 <div className="card shadow">
-                                    <img src={equipe2} className="card-img-top" alt="..." />
+                                    <img src={equipe2} className="card-img-top w-100" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab" }}>Mr AMA Jean-Paul</h5>
                                         <p className="card-text" style={{ fontFamily: "poppins", fontSize: "20px" }}>
@@ -161,7 +170,7 @@ function Projects() {
                                 <div className="card shadow">
                                     <img src={sage_femme} className="card-img-top" alt="..." />
                                     <div className="card-body">
-                                        <h5 classNames="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab" }}> Mlle OURO- KPANTE Djamila</h5>
+                                        <h5 className="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab" }}> Mlle OURO- KPANTE Djamila</h5>
                                         <p className="card-text" style={{ fontFamily: "poppins", fontSize: "20px" }}>
                                             Professionnelle de santé ( Sage-Femme & Biologiste )  conseils aux femmes
                                         </p>
@@ -179,7 +188,7 @@ function Projects() {
                                     </div>
                                 </div>
                             </div>
-                            <div classNames="col-md-4">
+                            <div className="col-md-4">
                                 <div className="card shadow">
                                     <img src={equipe} className="card-img-top" alt="..." />
                                     <div className="card-body">
@@ -195,14 +204,19 @@ function Projects() {
                 </div>
             </section>
 
+            {/* fin de la section notre équipe */}
+
+
+            {/* debut de la petite section,invitation a agir avec nous */}
             <section className="give">
                 <div className="region  text-center mb-3">
                     <p>
-                        <h3 className="maritime">Réjoignez notre équipe !!!</h3>
+                        <h3 className="maritime" style={{ color:"white" , fontFamily: "Roboto Slab, serif "}}>Réjoignez notre équipe !!!</h3>
                     </p>
-                    <Link to="/parteners" style={{ color: "#F46A21", fontSize: "25px", fontFamily: "poppins" }} className="btn bg-light shadow">Postulez</Link>
+                    <Link to="/parteners" style={{ color: "#F46A21", fontSize: "25px", fontFamily: "poppins" }} className="btn bg-light postulez shadow">Postulez</Link>
                 </div>
             </section>
+            {/* finde section */}
         </div>
     );
 

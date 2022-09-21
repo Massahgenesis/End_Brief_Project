@@ -16,30 +16,35 @@ function Founder() {
     return (
         <div>
 
+            {/* la page d'accueil */}
+
+
+           {/* debut et fin de la primiere section apres la navbar */}
             <Sliders />
+           
 
-
-
+            {/* debut de la section nos missions */}
             <section className="our-mission border-top">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 text-center">
-                            <h3 className="main-heading ">
+                            <h3 className="main-heading " >
                                 Nos Missions
                             </h3>
                             <div className="underline mx-auto"></div>
-                            <p className="pb-20 mb-5"> Quand bien même la santé mentale jeune future mère
+                            <p className="pb-20 mb-5 found-text" style={{ fontFamily: "poppins", fontSize: "22px" }}> 
+                              Quand bien même la santé mentale jeune future mère
                                 est une priorité pour nous, celle des mères célibataires n'en est pas moindre pour nous même si nous ne mettons pas l'accent dessus. En effet nous prévoyons un programme de
                                 soutien également aux mères célibataires. Mis à part le soutien psychologique nous avons à coeur d'accompagnez ces femmes professionnellement parlant pour un meilleur
                                 épanouissement et pour se faire nous sommes contitués d'une équipe restreinte mais déterminée et éfficace.
                             </p>
-                            <div className="row row-cols-1 row-cols-md-3 g-4 ">
+                            <div className="row row-cols-1 row-cols-md-3 g-4 fundation ">
                                 <div className="col-md-4">
                                     <div className="card shadow">
-                                        <img src={psy} className="card-img-top" alt="..." />
+                                        <img src={psy} className="card-img-top w-100" alt="..." />
                                         <div className="card-body">
-                                            <h5 classNames="card-title">Soutien psychologique</h5>
-                                            <p className="card-text">
+                                            <h5 className="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}>Soutien psychologique</h5>
+                                            <p className="card-text" style={{ fontFamily: "poppins", fontSize:"18px" }}>
                                                 La future mère au vu de son état et confrontée aux réalités, a besoin d'un soutien ...
                                             </p>
                                             <Link to="/projects" className="btn btn-link">Lire plus</Link>
@@ -51,8 +56,8 @@ function Founder() {
                                     <div className="card shadow">
                                         <img src={mereenfant} className="card-img-top" alt="..." />
                                         <div className="card-body">
-                                            <h5 className="card-title">Bien-être mental et suivi</h5>
-                                            <p className="card-text">
+                                            <h5 className="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}>Bien-être mental et suivi</h5>
+                                            <p className="card-text"style={{ fontFamily: "poppins", fontSize:"18px" }} >
                                                 Aussi bien pendant la grossesse,qu'apres la jeune fille a toujours besoin d'être soutenu ...
                                             </p>
                                             <Link to="/projects" className="btn btn-link">Lire plus</Link>
@@ -60,13 +65,13 @@ function Founder() {
                                         <div className="color"></div>
                                     </div>
                                 </div>
-                                <div classNames="col-md-4">
+                                <div className="col-md-4">
                                     <div className="card shadow">
                                         <img src={rencontre2} className="card-img-top" alt="..." />
                                         <div className="card-body">
-                                            <h5 className="card-title">Rencontre et sensibilisation</h5>
-                                            <p className="card-text">
-                                                Mise à part la jeune fille mère,notre programme prends en compte la mère célibataire...
+                                            <h5 className="card-title"style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }} >Rencontre et sensibilisation</h5>
+                                            <p className="card-text" style={{ fontFamily: "poppins", fontSize:"18px" }}>
+                                                Mise à part la jeune fille mère,notre programme prends en compte la mère ...
                                             </p>
                                             <Link to="/projects" className="btn btn-link">Lire plus</Link>
                                         </div>
@@ -78,19 +83,24 @@ function Founder() {
                     </div>
                 </div>
             </section>
-            <section className="our-network mb-20">
+
+            {/* fin de la section nos missions */}
+
+            {/* debut de la section notre reseau */}
+            <section className="our-network mb-2">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 text-center">
-                            <h3 className="main-heading ">
+                            <h3 className="main-heading " >
                                 Notre réseau
                             </h3>
-                            <div className="underline mx-auto font-family:poppins"></div>
-                            <p className="reseau">
-                                Selon des récherches récents fait par le ministère de l'action socialen.,khk,knr,,krijtueijjrthijtrejhnjhbbbbbbjjjjjjnjj
-                                rjthehutrhrfujfnruiisutjhtiu(tk(jhutrhrrhrjrhjhuooiiljiojuhtjjiijihtjytyjyhyhijjbnkjnkjnjgfikghnkh
-                                jhjkhiytthjjkygkhkkjhgkgjhkkgkkggjhkjkkkk))fhfffjfjfkrkfkgn,gf,ytroitngo^protjrtjgfsfdfvhgdhjgdhjiurtjhbrfbrdeuhuhbrthb
-                                fhjtrugbnjvbhjjnknfgkngfggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+                            <div className="underline mx-auto "></div>
+                            <p className=" col-md-12 text-center found-text" style={{ fontFamily: "poppins", fontSize: "22px" }}>
+                            Des études menées par certains journaux et magazine montre que de 
+                            nos jours les familles monoparentales est plus que jamais une réalités
+                             et dont le taux ne cesse d'augmenter pour plusieurs raisons. Alors notre
+                              réseau va de lomé à cinkassé. Autrement dit, notre missions va couvrir les cinq 
+                              régions du Togo
                             </p>
                         </div>
                         <div>
@@ -99,37 +109,35 @@ function Founder() {
                     </div>
                 </div>
                 <div className="region  text-center">
-                    <p>
-                        <h3 className="maritime">La région maritime, zone primaire de nos activités</h3>
-                    </p>
-                    <Link to="/network" style={{ color: "#F46A21" }} className="btn bg-light shadow">Découvrir</Link>
+                <h3 className="maritime" style={{ color: "white", fontFamily: "roboto slab", fontSize: "22px" }}>La région maritime, zone primaire de nos activités</h3>
+                    <Link to="/network" style={{ color: "#F46A21",fontFamily: "poppins" }} className="btn bg-light shadow">Découvrir</Link>
                 </div>
             </section>
             <section className="join-us">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 text-center  mt-30">
-                            <h3 className="main-heading ">
+                        <div className="col-md-12 text-center  mt-3">
+                            <h3 className="main-heading " >
                                 Nous Réjoindre
                             </h3>
                             <div className="underline mx-auto font-family:poppins"></div>
                         </div>
-                        <p className="col-md-12 text-center">
+                        <p className="col-md-12 text-center found-text" style={{ fontFamily: "poppins", fontSize:"22px" }}>
                             Tous autant que nous sommes, nous avons toujours quelques choses à offrir. quelques soit vos compétences votre rang social,
                             vous pouvez si vous le voulez de redonner vie à ces femmes par un mot,un geste, un sourire etc... Réjoignez nous en vue d'oeuvrer ensemble pour un monde meilleur
                         </p>
-                        <div className="help mt-5">
-                            <div className="equipe1">
+                        <div className="help mt-3">
+                            <div className="equipe1 mb-2">
 
-                                <div className="soutenir">
+                                <div className="soutenir ">
                                     <h1>REJOIGNEZ NOTRE EQUIPE <br /> EN DEVENANT BENEVOLE</h1>
-                                    <Link to="/parteners" style={{ background: "#F46A21", color: "white" }} className="btn btn shadow">Découvrir</Link>
+                                    <Link to="/parteners" style={{ background: "#F46A21", color: "white" }} className="btn btn shadow buton">Découvrir</Link>
                                 </div>
                             </div>
-                            <div className="equipe2">
+                            <div className="equipe2 ">
                                 <div className="soutenir ">
                                     <h1>SOUTENEZ NOTRE CAUSE <br />EN FAISANT UN DON</h1>
-                                    <Link to="/parteners" style={{ background: "#F46A21", color: "white" }} className="btn btn shadow">Découvrir</Link>
+                                    <Link to="/parteners" style={{ background: "#F46A21", color: "white",marginLeft:"200px" }} className="btn btn shadow buton">Découvrir</Link>
                                 </div>
                             </div>
                         </div>
@@ -137,16 +145,20 @@ function Founder() {
                 </div>
             </section>
 
+            {/* fin de la section notre reseau */}
+            
+            {/* debut et fin de la section blog, créee sur une autre page et importé */}
             < Actu />
 
+
+            {/* debut d'une sous section en quelques sorte, qui renvoi sur la page de soumission de demande */}
             <section className="give">
                 <div className="region  text-center mb-3" >
-                    <p>
-                        <h3 className="maritime">Agissez avec nous !!!</h3>
-                    </p>
-                    <Link to="/submitPage" style={{ color: "#F46A21" }} className="btn bg-light shadow">FAITES UN DON</Link>
+                <h3 className="maritime" style={{ color: "white",fontFamily:"Roboto Slab, serif" }}>Avez-vous besoin de soutien ?</h3>
+                    <Link to="/submitPage" style={{ color: "#F46A21" }} className="btn bg-light shadow">Ecrivez-nous</Link>
                 </div>
             </section>
+            {/* fin de la page d'accueil */}
 
         </div>
     );

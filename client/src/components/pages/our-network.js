@@ -1,11 +1,21 @@
 import React from "react";
 import maritime2 from "../images/femmes_enceinte/maritime2.jpg";
+import plateau from "../images/femmes_enceinte/plateau.png";
+import centrale from "../images/femmes_enceinte/centrale.jpg";
+import kara from "../images/femmes_enceinte/kara.png";
+import dapaong from "../images/femmes_enceinte/dapaong.png";
 import { Link } from "react-router-dom"
+
+// importation des images
 
 function Network() {
 
     return (
         <div >
+
+            {/* page traitant des zones de nos activités */}
+
+            {/* premiere section traitant du heading */}
             <section className="py-" style={{ background: "#0072BE", color: "white" }}>
 
                 <div className="container">
@@ -21,6 +31,10 @@ function Network() {
                     </div>
                 </div>
             </section>
+
+            {/* fin de la premiere section */}
+
+            {/* debut de la section montrant les differentes regions */}
             <section className="section bg-c-light mt-5">
                 <div className="container">
                     <h4 className="main-heading">Notre Réseau</h4>
@@ -30,7 +44,7 @@ function Network() {
                     <div className="row">
                         <div className="col-md-12 text-center">
 
-                            <p className="mb-5" style={{ fontFamily: "poppins", fontSize: "20px" }}>
+                            <p className="mb-5 text-network" style={{ fontFamily: "poppins", fontSize: "20px" }}>
                                 Des études menées par certains journaux et magazine montre que de nos jours les familles monoparentales
                                 est plus que jamais une réalités et dont le taux ne cesse d'augmenter pour plusieurs raisons. Alors notre réseau va de lomé à cinkassé.
                                 Autrement dit, notre missions va couvrir les cinq régions du Togo : <b>La région des savanes, la région de la kara, la région de la
@@ -41,47 +55,73 @@ function Network() {
                             </p>
                         </div>
                     </div>
-                    <div className="container">
-                        <div className="row shadow">
-                            <div className="col-md-6 mb-5">
-                                <img src={maritime2} className="card-img" alt="..." />
+                    <div className="container ms-auto mb-5 network-title">
+                        <div className="row row-cols-1 row-cols-md-3 g-4 mb-3 d-flex">
+                            <div className="col-md-2">
+                                <div className="card shadow">
+                                    <img src={maritime2} className="card-img-top mb-3 shadow w-100" alt="..." />
+                                    <div className="color "></div>
+                                    <div className="card-body">
+                                        <h5 className="card-text" style={{ color: "#F46A21", fontFamily: "roboto slab", fontWeight: "bolder" }}> REGION MARITIME</h5>                                      
+                                    </div>
+                                   
+                                </div>
                             </div>
-                            <div className="col-md-6 aligned flex item mt-5">
-                                <h2 className="" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "px" }}> Région maritime</h2>
-                                <p style={{ fontFamily: "poppins", fontSize: "20px" }}> Zone primaire de nos activités; Elle concerne plus précisement la ville de lomé, aneho, vogan,
-                                    tsévié, kévé et les autres villes environnantes.</p>
+                            <div className="col-md-2">
+                                <div className="card shadow">
+                                    <img src={plateau} className="card-img-top mb-3 shadow w-100" alt="..." />
+                                    <div className="color"></div>
+                                    <div className="card-body">
+                                        <h5 className="card-text" style={{ color: "#F46A21", fontFamily: "roboto slab", fontWeight: "bolder" }}>  REGION PLATEAUX</h5>
+                                        
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="underline w-100 " style={{ background: "#0072BE", height: "20px" }}></div>
-                        <div className="row mb-3 me-2 ">
-                            <div className="col-md-6 region1 shadow">
-                                <h2 className="plat"> La région des plateaux</h2>
+                            <div className="col-md-2">
+                                <div className="card shadow">
+                                    <img src={centrale} className="card-img-top mb-3 shadow w-100" alt="..." />
+                                    <div className="color"></div>
+                                    <div className="card-body">
+                                        <h5 className="card-text" style={{ color: "#F46A21", fontFamily: "roboto slab", fontWeight: "bolder" }}> REGION CENTRALE</h5>
+                                    </div>                                  
+                                </div>
                             </div>
-                            <div className="col-md-6 aligned flex item region2 shadow">
-                                <h2 className="plat">La région centrale</h2>
+                            <div className="col-md-2">
+                                <div className="card shadow">
+                                    <img src={kara} className="card-img-top mb-3 shadow w-100" alt="..." />
+                                    <div className="color"></div>
+                                    <div className="card-body">
+                                        <h5 className="card-text" style={{ color: "#F46A21", fontFamily: "roboto slab", fontWeight: "bolder" }}> REGION KARA</h5>
+                                        
+                                    </div>
+                                </div>
                             </div>
-
-                        </div>
-                        <div className="row mb-3 me-2 ">
-                            <div className="col-md-6 region3 shadow">
-                                <h2 className="plat w-100 align-items-end"> La région de la kara</h2>
+                            <div className="col-md-2">
+                                <div className="card shadow">
+                                    <img src={dapaong} className="card-img-top mb-3 shadow w-100" alt="..." />
+                                    <div className="color"></div>
+                                    <div className="card-body">
+                                        <h5 className="card-text" style={{ color: "#F46A21", fontFamily: "roboto slab", fontWeight: "bolder" }}> REGION  SAVANES</h5>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="col-md-6 aligned flex item region4 shadow">
-                                <h2 className="plat w-100">La région des savanes</h2>
-                            </div>
-
                         </div>
                     </div>
                 </div>
             </section>
+            {/* fin de la section */}
+
+            {/* debut de la petite section renvoyant a la apge de soummission */}
             <section className="give">
                 <div className="region  text-center mb-3" >
                     <p>
-                        <h3 className="maritime">Avez- besoin d'être écouté ?</h3>
+                        <h3 className="maritime" style={{ color: "white", fontFamily: "roboto slab" }}>Avez-vous besoin d'être écouté ?</h3>
                     </p>
                     <Link to="/submitPage" style={{ color: "#F46A21" }} className="btn bg-light shadow">Contactez nous</Link>
                 </div>
             </section>
+
+            {/* fin de la petite section et de la section notre reseau */}
         </div>
     );
 

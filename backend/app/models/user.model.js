@@ -1,24 +1,18 @@
-const mongoose = require ("mongoose");
+// const mongoose = require ("mongoose");
 
 module.exports = mongoose =>{
-    const Users = mongoose.model(
-        "user",
+    const Tutorial = mongoose.model(
+        "tutorial",
         mongoose.Schema(
             {
-                name:String,
-                firstName: String,
-                age: Boolean,
-                phone: Boolean,
-                mail:String,
-                adress:String,
-                job:String,
-                situation:String,
-                region:String,
-                town:String,
-                message:String
+
+
+                title: String,
+                description: String,
+                published:  Boolean
             },
             {timesTamps: true}
         )
     );
-    return Users;
+    return Tutorial;
 };

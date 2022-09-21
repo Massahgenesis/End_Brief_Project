@@ -258,8 +258,28 @@ let SubmitPage =() => {
 
                                                             <option >veuillez choisir s'il vous plaît</option>
                                                             <option value="Lomé">Lomé</option>
-                                                            <option value="kara">Kara</option>
-                                                            <option value="tsevié">tsevié</option>
+                                                            <option value="Sokodé">Sokodé</option>
+                                                            <option value="kara">kara</option>
+                                                            <option value="Kpalimé">Kpalimé</option>
+                                                            <option value="Atakpamé">Atakpamé</option>
+                                                            <option value="Bassar">Bassar</option>
+                                                            <option value="Tsévié">Tsévié</option>
+                                                            <option value="Aného">Aného</option>
+                                                            <option value="Mango">Mango</option>
+                                                            <option value="Dapaong">Dapaong</option>
+                                                            <option value="Tchamba">Tchamba</option>
+                                                            <option value="Niamtougou">Niamtougou</option>
+                                                            <option value="Bafilo">Bafilo</option>
+                                                            <option value="Notsè">Notsè</option>
+                                                            <option value="Sotouboua">Sotouboua</option>
+                                                            <option value="Vogan">Vogan</option>
+                                                            <option value="Badou">Badou</option>
+                                                            <option value="Biankouri">Biankouri</option>
+                                                            <option value="Tabligbo">Tabligbo</option>
+                                                            <option value="Kandé">Kandé</option>
+                                                            <option value="Amlamè">Amlamè</option>
+                                                            <option value="Galangachi">Galangachi</option>
+                                                            <option value="Kpagouda">Kpagouda</option>
                                                         </select>
                                                     </div>
                                                 </div>

@@ -47,7 +47,11 @@ function Parteners() {
 
     return (
         <div>
+
+            {/* la section devenir partenaire */}
              {/* <pre> {JSON.stringify (state.partner)} </pre> */}
+
+             {/* debut de la premiere section traitant du heading */}
             <section className="py-" style={{ background: "#0072BE", color: "white" }}>
                 <div className="container">
                     <div className="row p-3">
@@ -62,6 +66,10 @@ function Parteners() {
                     </div>
                 </div>
             </section>
+
+            {/* fin de la section */}
+
+            {/* section devenir partenaire proprement dite */}
             <section className="section bg-c-light mt-5">
                 <div className="container">
                     <h4 className="main-heading">Devenir parténaire</h4>
@@ -69,11 +77,9 @@ function Parteners() {
                 </div>
                 <div className='container'>
                     <div className='row membre '>
-                        {/* <div className='col-md-4  '>
-                            <img src={equipe} className="img-fluid" alt="..." />
-                        </div>  */}
+                        
                         <div className='col-md-12 text-center '>
-                            <p className='  ' style={{ fontFamily: "poppins", marginTop: "5px", fontSize: "22px" }}>
+                            <p className=' text-partner ' style={{ fontFamily: "poppins", marginTop: "5px", fontSize: "22px" }}>
                                 IL est certes vrai que nous avons opter pour ce chemin qui est celui de redonner le goût de vivre
                                 à toutes ces jeunes mères célibataires, sinon à toutes les mères célibataires qui font une depression du fait
                                 compte tenu des réalités qu'elle vivent aux quotidiens; Conséquences certaines perdent la vie avant d'arriver à terme de leur grossesses , et d'autres ce sont des troubles
@@ -92,6 +98,10 @@ function Parteners() {
                 </div>
             </section>
 
+            {/* fin de section */}
+
+
+            {/* section traitant du formulaire */}
             <section className="h-100  shadow mb-3 bg-c-light"  >
                 <div className="container py-5 h-100">
                     <div className="row d-flex justify-content-center align-items-center h-100">
@@ -101,7 +111,7 @@ function Parteners() {
                                    
 
                                     <form action="" method="post" onSubmit={submitForm}>
-                                        <div className="row g-0">
+                                        <div className="row g-0 text-form">
                                             <div className="col-lg-6">
                                                 <div className="p-5">
                                                     <h3 className="fw-normal mb-5" style={{ color: "#4835d4" }}> Infomation Générale</h3>
@@ -410,7 +420,7 @@ function Parteners() {
                     </div>
                 </div>
             </section>
-
+            {/* fin de section */}
 
         </div >
     );

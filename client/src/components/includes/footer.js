@@ -1,36 +1,13 @@
-import React, {useState} from "react";
+import React from "react";
 import { FaMapMarkerAlt, FaTwitter, FaLinkedin, FaFacebookSquare, FaEnvelope, FaMobileAlt } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
+import {Link} from 'react-router-dom';
+import Newsletter from "./newsletter";
 
 
 function Footer() {
 
-    let [state, setState] =useState({
-        loading:false,
-        subscriber:{
-            mail:""
-        }
-    });
-
-    let updateInput= (e) =>{
-        setState({
-            ...state,
-            subscriber: {
-                ...state.subscriber,
-                [e.target.name] : e.target.value
-            }
-        });
-    }
-
-    let submitForm = async (e) =>{
-        e.preventDefault();
-        console.log(state);
-    }
-
-    let {subscriber} = state;
-
-
-
+ 
     return (
 
         <div>
@@ -41,10 +18,10 @@ function Footer() {
                             <div className="col-md-4 mb-md-0 mb-4 d-flex">
                                 <div className="con con-1 w-100 py-5">
                                     <div className="con-info w-100 text-center">
-                                        <div className="icon d-flex align-items-center justify-content-center">
+                                        <div className="icon d-flex align-items-center justify-content-center" style={{ background: "#0072BE", color: "white" }}>
                                             <span className="ion-ios-call"><FaMobileAlt /></span>
                                         </div>
-                                        <div className="text">
+                                        <div className="text" style={{ fontFamily: "poppins", fontSize: "19px" }}>
                                             <span>(+228) 97052081</span>
                                         </div>
                                     </div>
@@ -53,10 +30,10 @@ function Footer() {
                             <div className="col-md-4 mb-md-0 mb-4 d-flex">
                                 <div className="con con-2 w-100 py-5">
                                     <div className="con-info w-100 text-center">
-                                        <div className="icon d-flex align-items-center justify-content-center">
+                                        <div className="icon d-flex align-items-center justify-content-center" style={{ background: "#0072BE", color: "white" }}>
                                             <span className="ion-ios-mail"><FaEnvelope /></span>
                                         </div>
-                                        <div className="text">
+                                        <div className="text" style={{ fontFamily: "poppins", fontSize: "19px" }}>
                                             <span>massyndjao@gmail.com</span>
                                         </div>
                                     </div>
@@ -65,62 +42,44 @@ function Footer() {
                             <div className="col-md-4 mb-md-0 mb-4 d-flex">
                                 <div className="con con-3 w-100 py-5">
                                     <div className="con-info w-100 text-center">
-                                        <div className="icon d-flex align-items-center justify-content-center">
+                                        <div className="icon d-flex align-items-center justify-content-center" style={{ background: "#0072BE", color: "white" }}>
                                             <span> <FaMapMarkerAlt /></span>
                                         </div>
-                                        <div className="text">
+                                        <div className="text" style={{ fontFamily: "poppins", fontSize: "19px" }}>
                                             <span>Lomé - Togo</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="row">
+                        <div className="row" style={{ fontFamily: "poppins", fontSize: "19px" }}>
                             <div className="col-md-7">
                                 <div className="row">
-                                    <div className="col-md-4 mb-md-0 mb-4">
+                                    <div className="col-md-4 mb-md-0 mb-4" >
                                         <h2 className="footer-heading">Fondation</h2>
                                         <ul className="list-unstyled">
-                                            <li><a href="#" className="d-block">Notre Histoire</a></li>
-                                            <li><a href="#" className="d-block">Notre Equipe</a></li>
-                                            <li><a href="#" className="d-block">Nos Mission</a></li>
+                                            <Link to="/"className="btn bg-link">Accueil</Link>
+                                            <Link to="/projects"className="btn bg-link">Notre équipe</Link>
+                                            <Link to="/projects"className="btn bg-link">Nos missions</Link>
                                         </ul>
                                     </div>
                                     <div className="col-md-4 mb-md-0 mb-4">
                                         <h2 className="footer-heading">Réseau</h2>
                                         <ul className="list-unstyled">
-                                            <li><a href="#" className="d-block">La Maritime</a></li>
-                                            <li><a href="#" className="d-block">Devenir partenaire</a></li>
-                                            <li><a href="#" className="d-block">Faire un don</a></li>
+                                            <Link to="/network"className="btn bg-link">Notre réseau</Link>
+                                            <Link to="/parteners"className="btn bg-link">Devenir partenaire</Link>
+                                            <Link to="/parteners"className="btn ">Faire un don</Link>
                                         </ul>
                                     </div>
                                     <div className="col-md-4 mb-md-0 mb-4">
                                         <h2 className="footer-heading">Ressource</h2>
                                         <ul className="list-unstyled">
-                                            <li><a href="#" className="d-block">Blog</a></li>
-                                            <li><a href="#" className="d-block">Newsletter</a></li>
+                                        <Link to="/novel"className="btn bg-link">Blog</Link>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-5 mb-md-0 mb-4">
-                                <h2 className="footer-heading">Souscrire</h2>
-                                <form action="/signup" method="POST" className="subscribe-form" onSubmit={submitForm}>
-                                    <div className="form-group d-flex">
-                                        <input 
-                                        type="text"
-                                        id="mail"
-                                        name="mail" 
-                                        value={subscriber.news}
-                                        onChange = {updateInput}
-                                        required
-                                        className="form-control rounded-left" 
-                                        placeholder="Entrez votre adress mail" />
-                                        <button type="submit" className="form-control submit rounded-right">Souscrire</button>
-                                    </div>
-                                    <span className="subheading">S'abonner pour récevoir des nouvelles</span>
-                                </form>
-                            </div>
+                            <Newsletter/>
                         </div>
                         <div className="row mt-5 pt-4 border-top">
                             <div className="col-md-6 col-lg-8 mb-md-0 mb-4">
