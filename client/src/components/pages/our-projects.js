@@ -63,7 +63,7 @@ function Projects() {
                             <img src={psy} className="card-img w-100" alt="..." />
                         </div>
                         <div className="col-md-6 align-self-end">
-                            <h2 className="mt-5 title-mission" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> Soutien psychologige</h2>
+                            <h2 className="mt-5 title-mission" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> SOUTIEN PSYCHOLOGIQUE</h2>
                             <p className="text-mission" style={{ fontFamily: "poppins", fontSize: "18px" }}> Nous offrons un soutien psychologique aux jeunes futures mères qui ont subi un choc émotionnel du fait de leur état et qui 
                             sombrent dans la dépression, se mettanten danger et le foeutus également. Il s'agit des moments d'échanges, d'écoutes entre le médecin psychologue et la jeune femme.</p>
                         </div>
@@ -73,7 +73,7 @@ function Projects() {
                             <img src={mereenfant} className="card-img w-100" alt="..." />
                         </div>
                         <div className="col-md-6 align-self-end">
-                            <h2 className="mb-2 title-mission" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> Bien-être mental et suivi</h2>
+                            <h2 className="mb-2 title-mission" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> BIEN-ETRE MENTAL ET SUIVI</h2>
                             <p  className="text-mission" style={{ fontFamily: "poppins", fontSize: "18px" }}>  Aussi bien pendant la grossesse,qu'apres la jeune fille a toujours besoin d'être soutenu , ce sera toujours des séances
                             de partage avec le médécin psychologue, la sage-femme et l'expert en developpement personnelle en vue de redonner confiance à la mère; Ce qui va également impacter positivement 
                             le nouveau du fait que la mère confiante, offrira à celui-ci un bon épanouissementet une meilleure éducation, gage d'un monde meilleur.</p>
@@ -84,7 +84,7 @@ function Projects() {
                             <img src={rencontre2} className="card-img w-100" alt="..." />
                         </div>
                         <div className="col-md-6 align-self-end">
-                            <h2 className="mb-2 title-mission" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> Rencontre et sensibilisation</h2>
+                            <h2 className="mb-2 title-mission" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> RENCONTRE ET SENSIBILISATION</h2>
                             <p className="text-mission" style={{ fontFamily: "poppins", fontSize: "18px" }}>  Organisation des campagnes de sensibilisation regroupant toutes femmes, de toute tranche d'âge
                             sur les dispositions à prendre afin d' éviter ces situations inconfortables ou du moins comment minimiser les conséquences. Aussi nous interagissons avec 
                             des ONG et associations luttant pour la cause des mères célibataires.</p>
@@ -95,7 +95,7 @@ function Projects() {
                             <img src={fille} className="card-img w-100" alt="..." />
                         </div>
                         <div className="col-md-6 align-self-end">
-                            <h2 className="mb-2 title-mission" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> Formation entrepreuneriale et insertion professionnelle</h2>
+                            <h2 className="mb-2 title-mission" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}> FORMATION ENTREPRENEURIALE ET INSERTION PROFESSIONNELLE</h2>
                             <p  className="text-mission" style={{ fontFamily: "poppins", fontSize: "18px" }}>  
                             Orientation et accompagnement de la mère célibataire dans le choix du métier qu'elle voudrait faire, formation et suivi durant la formation et insertion professionnelle
                             </p>
