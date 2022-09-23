@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { UsersService } from "../../services/UsersService";
 // import axios from 'axios';
-import images2 from "../images/femmes_enceinte/images2.jpg"
+import seules from "../images/femmes_enceinte/seules.jpg"
 
 let SubmitPage =() => {
 
@@ -35,30 +35,12 @@ let SubmitPage =() => {
         });
     };
 
-    //  useEffect(async() => {
-    //      try {
-            
-    //      }
-    //     catch (error) {
-
-    //     }
-    //  }, []);
 
     let submitForm = async(e)=>{
 
         e.preventDefault();
         console.log(state);
-        // try {
-        //     // let response = await UsersService.createUser(state.user);
-        //     // if (response){
-        //     //     console.log(" Envoyé avec succès !")
-        //     // }
-        // }
-        // catch(error){
-        //     setState({...state, errorMessage:error.message});
-        //     //  navigate('/..' ,{ replace: false});
-        //     // console.log("Erreur, vérifez ls informations et renvoyez le formulaire!")
-        // }
+        
     };
 
     let { user} = state;
@@ -103,7 +85,8 @@ let SubmitPage =() => {
                             <div className="card card-registration my-4">
                                 <div className="row g-0">
                                     <div className="col-xl-6 d-none d-xl-block">
-                                        <img src={images2} className="img-fluid h-100" alt="..." />
+                                        <img src={seules} className="img-fluid h-100" alt="..." />
+                                        
                                     </div>
                                     <div className="col-xl-6">
                                         <div className="card-body p-md-5 text-black">

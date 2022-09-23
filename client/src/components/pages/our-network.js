@@ -113,7 +113,7 @@ function Network() {
 
             {/* debut de la petite section renvoyant a la apge de soummission */}
             <section className="give">
-                <div className="region  text-center mb-3" >
+                <div className="region  text-center" >
                     <p>
                         <h3 className="maritime" style={{ color: "white", fontFamily: "roboto slab" }}>Avez-vous besoin d'être écouté ?</h3>
                     </p>

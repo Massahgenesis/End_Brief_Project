@@ -52,9 +52,9 @@ function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div className="row" style={{ fontFamily: "poppins", fontSize: "19px" }}>
+                        <div className="row liens-utiles" style={{ fontFamily: "poppins", fontSize: "19px" }}>
                             <div className="col-md-7">
-                                <div className="row">
+                                <div className="row ">
                                     <div className="col-md-4 mb-md-0 mb-4" >
                                         <h2 className="footer-heading">Fondation</h2>
                                         <ul className="list-unstyled">

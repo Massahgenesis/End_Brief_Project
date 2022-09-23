@@ -87,7 +87,7 @@ function Founder() {
             {/* fin de la section nos missions */}
 
             {/* debut de la section notre reseau */}
-            <section className="our-network mb-2">
+            <section className="our-network ">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 text-center">
@@ -116,7 +116,7 @@ function Founder() {
             <section className="join-us">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 text-center  mt-3">
+                        <div className="col-md-12 text-center  ">
                             <h3 className="main-heading " >
                                 Nous Réjoindre
                             </h3>
@@ -153,7 +153,7 @@ function Founder() {
 
             {/* debut d'une sous section en quelques sorte, qui renvoi sur la page de soumission de demande */}
             <section className="give">
-                <div className="region  text-center mb-3" >
+                <div className="region  text-center " >
                 <h3 className="maritime" style={{ color: "white",fontFamily:"Roboto Slab, serif" }}>Avez-vous besoin de soutien ?</h3>
                     <Link to="/submitPage" style={{ color: "#F46A21" }} className="btn bg-light shadow">Ecrivez-nous</Link>
                 </div>

@@ -68,7 +68,7 @@ function Projects() {
                             sombrent dans la dépression, se mettanten danger et le foeutus également. Il s'agit des moments d'échanges, d'écoutes entre le médecin psychologue et la jeune femme.</p>
                         </div>
                     </div>
-                    <div className="row p-5 shadow mt-2" style={{backgroundColor:"#0072be4d"}}>
+                    <div className="row p-5 shadow mt-2" style={{backgroundColor:""}}>
                         <div className="col-md-4 ">
                             <img src={mereenfant} className="card-img w-100" alt="..." />
                         </div>
@@ -90,7 +90,7 @@ function Projects() {
                             des ONG et associations luttant pour la cause des mères célibataires.</p>
                         </div>
                     </div>
-                    <div className="row p-5 shadow mt-2" style={{backgroundColor:"#0072be4d"}}>
+                    <div className="row p-5 shadow mt-2" style={{backgroundColor:""}}>
                         <div className="col-md-4 ">
                             <img src={fille} className="card-img w-100" alt="..." />
                         </div>
@@ -209,7 +209,7 @@ function Projects() {
 
             {/* debut de la petite section,invitation a agir avec nous */}
             <section className="give">
-                <div className="region  text-center mb-3">
+                <div className="region  text-center ">
                     <p>
                         <h3 className="maritime" style={{ color:"white" , fontFamily: "Roboto Slab, serif "}}>Réjoignez notre équipe !!!</h3>
                     </p>

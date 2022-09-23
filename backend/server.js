@@ -24,12 +24,14 @@ app.get("/", (req, res) => {
     res.json({ message: "bienvenue sur notre site" });
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080
 
 app.listen(PORT, console.log(`server started on ${PORT}`));
 
 //conneccting database
 const db = require("./app/models");
+
+
 db.mongoose
     .connect(process.env.URL)
     .then(() => {

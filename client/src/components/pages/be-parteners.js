@@ -102,7 +102,7 @@ function Parteners() {
 
 
             {/* section traitant du formulaire */}
-            <section className="h-100  shadow mb-3 bg-c-light"  >
+            <section className="h-100  shadow  bg-c-light"  >
                 <div className="container py-5 h-100">
                     <div className="row d-flex justify-content-center align-items-center h-100">
                         <div className="col-12">
