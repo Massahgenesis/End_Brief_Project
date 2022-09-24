@@ -1,6 +1,5 @@
+import axios from "axios";
 import React, { useState } from "react";
-import { UsersService } from "../../services/UsersService";
-// import axios from 'axios';
 import seules from "../images/femmes_enceinte/seules.jpg"
 
 let SubmitPage =() => {
@@ -39,12 +38,15 @@ let SubmitPage =() => {
     let submitForm = async(e)=>{
 
         e.preventDefault();
-        console.log(state);
-        
+        await axios.post('http://localhost:8000/api/form/member',state)
+        .then((res)=>console.log(res))
+        .catch((err)=> console.log(err));
+
     };
 
     let { user} = state;
 
+    
    
     return (
 
