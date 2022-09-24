@@ -107,7 +107,7 @@ function Projects() {
             {/* fin de la section nos missions */}
 
             {/* introduction d'une section, faisant mention de nootre équipe */}
-            <section className="team bg-light border-bottom mt-5">
+            <section className="team  border-bottom mt-5">
                 <div className="container">
                 <h1 className="main-heading mb-3 mt-5" >Notre Équipe</h1>
                         <div className="underline "></div>
@@ -134,10 +134,10 @@ function Projects() {
                             <div className="col-md-4">
                                 <div className="card shadow">
                                     <img src={psy_femme} className="card-img-top w-100" alt="..." />
-                                    <div className="card-body">
+                                    <div className="card-body"  style={{backgroundColor:"#D9D9D9" }}>
                                         <h5 className="card-text" style={{ color: "#0072BE", fontFamily: "roboto slab" }}> Mme MAYA Leleng</h5>
-                                        <p className="card-text" style={{ fontFamily: "poppins", fontSize: "20px" }}>
-                                            Docteur psychologue et co-fondatrice de la fondation.
+                                        <p className="card-text" style={{ fontFamily: "poppins", fontSize: "20px",backgroundColor:"#D9D9D9" }}>
+                                            Docteur psychologue et co-fondatrice.
                                         </p>
                                     </div>
                                 </div>
@@ -145,7 +145,7 @@ function Projects() {
                             <div className="col-md-4">
                                 <div className="card shadow">
                                     <img src={membre1} className="card-img-top w-100" alt="..." />
-                                    <div className="card-body">
+                                    <div className="card-body" style={{backgroundColor:"#D9D9D9" }}>
                                         <h5 className="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab" }}> Mr ADJE Komla</h5>
                                         <p className="card-text" style={{ fontFamily: "poppins", fontSize: "20px" }}>
                                             Technicien entrepreneur  pour l'insertion professionnelle.
@@ -156,7 +156,7 @@ function Projects() {
                             <div className="col-md-4">
                                 <div className="card shadow">
                                     <img src={equipe2} className="card-img-top w-100" alt="..." />
-                                    <div className="card-body">
+                                    <div className="card-body" style={{backgroundColor:"#D9D9D9" }}>
                                         <h5 className="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab" }}>Mr AMA Jean-Paul</h5>
                                         <p className="card-text" style={{ fontFamily: "poppins", fontSize: "20px" }}>
                                             Responsable Réssources humaines et suivi des bénévoles.
@@ -169,7 +169,7 @@ function Projects() {
                             <div className="col-md-4">
                                 <div className="card shadow">
                                     <img src={sage_femme} className="card-img-top" alt="..." />
-                                    <div className="card-body">
+                                    <div className="card-body" style={{backgroundColor:"#D9D9D9" }}>
                                         <h5 className="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab" }}> Mlle OURO- KPANTE Djamila</h5>
                                         <p className="card-text" style={{ fontFamily: "poppins", fontSize: "20px" }}>
                                             Professionnelle de santé ( Sage-Femme & Biologiste )  conseils aux femmes
@@ -180,7 +180,7 @@ function Projects() {
                             <div className="col-md-4">
                                 <div className="card shadow">
                                     <img src={conseillere_jur} className="card-img-top" alt="..." />
-                                    <div className="card-body">
+                                    <div className="card-body" style={{backgroundColor:"#D9D9D9" }}>
                                         <h5 className="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab" }}> Mme ADA-Ani Rose</h5>
                                         <p className="card-text" style={{ fontFamily: "poppins", fontSize: "20px" }}>
                                             Gestionnaire comptable , évaluation et suivi de projet .
@@ -191,7 +191,7 @@ function Projects() {
                             <div className="col-md-4">
                                 <div className="card shadow">
                                     <img src={equipe} className="card-img-top" alt="..." />
-                                    <div className="card-body">
+                                    <div className="card-body" style={{backgroundColor:"#D9D9D9" }}>
                                         <h5 className="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab" }}>Mme HOLA Elémi</h5>
                                         <p className="card-text" style={{ fontFamily: "poppins", fontSize: "20px" }} >
                                             Expert en développement personnelle et professionnelle .
