@@ -32,7 +32,7 @@ function Founder() {
                                 Nos Missions
                             </h3>
                             <div className="underline mx-auto"></div>
-                            <p className="pb-20 mb-5 found-text" style={{ fontFamily: "poppins", fontSize: "22px" }}> 
+                            <p className="pb-20 mb-5 found-text" style={{ fontFamily: "poppins", fontSize: "18px" }}> 
                               Quand bien même la santé mentale jeune future mère
                                 est une priorité pour nous, celle des mères célibataires n'en est pas moindre pour nous même si nous ne mettons pas l'accent dessus. En effet nous prévoyons un programme de
                                 soutien également aux mères célibataires. Mis à part le soutien psychologique nous avons à coeur d'accompagnez ces femmes professionnellement parlant pour un meilleur
@@ -43,8 +43,8 @@ function Founder() {
                                     <div className="card shadow">
                                         <img src={psy} className="card-img-top w-100" alt="..." />
                                         <div className="card-body">
-                                            <h5 className="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}>Soutien psychologique</h5>
-                                            <p className="card-text" style={{ fontFamily: "poppins", fontSize:"18px" }}>
+                                            <h5 className="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "20px" }}>Soutien psychologique</h5>
+                                            <p className="card-text" style={{ fontFamily: "poppins", fontSize:"16px" }}>
                                                 La future mère au vu de son état et confrontée aux réalités, a besoin d'un soutien ...
                                             </p>
                                             <Link to="/projects" className="btn btn-link">Lire plus</Link>
@@ -56,8 +56,8 @@ function Founder() {
                                     <div className="card shadow">
                                         <img src={mereenfant} className="card-img-top" alt="..." />
                                         <div className="card-body">
-                                            <h5 className="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }}>Bien-être mental et suivi</h5>
-                                            <p className="card-text"style={{ fontFamily: "poppins", fontSize:"18px" }} >
+                                            <h5 className="card-title" style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "20px" }}>Bien-être mental et suivi</h5>
+                                            <p className="card-text"style={{ fontFamily: "poppins", fontSize:"16px" }} >
                                                 Aussi bien pendant la grossesse,qu'apres la jeune fille a toujours besoin d'être soutenu ...
                                             </p>
                                             <Link to="/projects" className="btn btn-link">Lire plus</Link>
@@ -69,8 +69,8 @@ function Founder() {
                                     <div className="card shadow">
                                         <img src={rencontre2} className="card-img-top" alt="..." />
                                         <div className="card-body">
-                                            <h5 className="card-title"style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "22px" }} >Rencontre et sensibilisation</h5>
-                                            <p className="card-text" style={{ fontFamily: "poppins", fontSize:"18px" }}>
+                                            <h5 className="card-title"style={{ color: "#0072BE", fontFamily: "roboto slab", fontSize: "20px" }} >Rencontre et sensibilisation</h5>
+                                            <p className="card-text" style={{ fontFamily: "poppins", fontSize:"16px" }}>
                                                 Mise à part la jeune fille mère,notre programme prends en compte la mère ...
                                             </p>
                                             <Link to="/projects" className="btn btn-link">Lire plus</Link>
@@ -95,7 +95,7 @@ function Founder() {
                                 Notre réseau
                             </h3>
                             <div className="underline mx-auto "></div>
-                            <p className=" col-md-12 text-center found-text" style={{ fontFamily: "poppins", fontSize: "22px" }}>
+                            <p className=" col-md-12 text-center found-text" style={{ fontFamily: "poppins", fontSize: "20px" }}>
                             Des études menées par certains journaux et magazine montre que de 
                             nos jours les familles monoparentales est plus que jamais une réalités
                              et dont le taux ne cesse d'augmenter pour plusieurs raisons. Alors notre
@@ -122,7 +122,7 @@ function Founder() {
                             </h3>
                             <div className="underline mx-auto font-family:poppins"></div>
                         </div>
-                        <p className="col-md-12 text-center found-text" style={{ fontFamily: "poppins", fontSize:"22px" }}>
+                        <p className="col-md-12 text-center found-text" style={{ fontFamily: "poppins", fontSize:"20px" }}>
                             Tous autant que nous sommes, nous avons toujours quelques choses à offrir. quelques soit vos compétences votre rang social,
                             vous pouvez si vous le voulez de redonner vie à ces femmes par un mot,un geste, un sourire etc... Réjoignez nous en vue d'oeuvrer ensemble pour un monde meilleur
                         </p>
@@ -130,13 +130,13 @@ function Founder() {
                             <div className="equipe1 mb-2">
 
                                 <div className="soutenir ">
-                                    <h1>REJOIGNEZ NOTRE EQUIPE <br /> EN DEVENANT BENEVOLE</h1>
+                                    <h2>REJOIGNEZ NOTRE EQUIPE <br /> EN DEVENANT BENEVOLE</h2>
                                     <Link to="/parteners" style={{ background: "#F46A21", color: "white" }} className="btn btn shadow buton">Découvrir</Link>
                                 </div>
                             </div>
                             <div className="equipe2 ">
                                 <div className="soutenir ">
-                                    <h1>SOUTENEZ NOTRE CAUSE <br />EN FAISANT UN DON</h1>
+                                    <h2>SOUTENEZ NOTRE CAUSE <br />EN FAISANT UN DON</h2>
                                     <Link to="/parteners" style={{ background: "#F46A21", color: "white",marginLeft:"200px" }} className="btn btn shadow buton">Découvrir</Link>
                                 </div>
                             </div>

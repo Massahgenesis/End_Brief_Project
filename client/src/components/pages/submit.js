@@ -1,5 +1,5 @@
-import axios from "axios";
 import React, { useState } from "react";
+import axios from 'axios';
 import seules from "../images/femmes_enceinte/seules.jpg"
 
 let SubmitPage =() => {
@@ -38,22 +38,39 @@ let SubmitPage =() => {
     let submitForm = async(e)=>{
 
         e.preventDefault();
+        console.log(state);
         await axios.post('http://localhost:8000/api/form/member',state)
-        .then((res)=>console.log(res))
+        .then((res)=> {
+            console.log(res)
+            setState({
+                user : {
+                    name:"",
+                    firstName: "",
+                    age: "",
+                    phone: "",
+                    mail:"",
+                    adress:"",
+                    job:"",
+                    situation:"",
+                    region:"",
+                    town:"",
+                    message:"",
+                         
+                 }
+            })
+        })
         .catch((err)=> console.log(err));
 
+        window.location = "/"
     };
 
     let { user} = state;
 
-    
    
     return (
 
         
         <div className="container">
-
-            
             <section className="py-" style={{ background: "#0072BE", color: "white" }}>
                 <div className="container">
                     <div className="row p-3">
@@ -74,13 +91,13 @@ let SubmitPage =() => {
                     <h4 className="main-heading">Remplir le formulaire</h4>
                     <div className="underline "></div>
                 </div>
-                <p className="col-md-12 text-center mb-5" style={{ fontSize: "22px", fontFamily: "poppins" }}>
+                <p className="col-md-12 text-center mb-5" style={{ fontSize: "20px", fontFamily: "poppins" }}>
                     Avant de remplir le formulaire sous dessous, nous vous demandons de lire les règlements et
                     dispositions de la fondation, afin d'éviter tout malentendu ou d 'éventuels conflits. Veuillez remplir ce fomrmulaire
                     de façon précise et honnête. Dès réception de formulaire, nous vous recontacterons dans les brefs délais
                 </p>
             </section>
-            <section className="h-100 mb-3 pl-5 pr-5" style={{ background: "#0072BE", fontSize: "20px", fontFamily: "poppins" }}>
+            <section className="h-100 mb-3 pl-5 pr-5" style={{ background: "#0072BE", fontSize: "18px", fontFamily: "poppins" }}>
                 <div className="container py-5 h-100">
                     <div className="row d-flex justify-content-center align-items-center h-100">
                         <div className="col">
@@ -162,7 +179,7 @@ let SubmitPage =() => {
                                                     className="form-control form-control-lg"
                                                     value={user.mail}
                                                     onChange = {updateInput}
-                                                    required = {true}  
+                                                   
                                                     />
 
                                                 </div>
@@ -198,7 +215,8 @@ let SubmitPage =() => {
                                                     name="situation" 
                                                     value={user.situation}
                                                     onChange = {updateInput}
-                                                    required =  {true}  >
+                                                    required =  {true}  
+                                                    style={{ fontSize:"14px" }}>
 
                                                         <option >veuillez choisir s'il vous plaît</option>
                                                         <option value="Enceinte et seule">Enceinte et seule</option>
@@ -214,13 +232,14 @@ let SubmitPage =() => {
                                                 <div className="row">
 
                                                     <div className="col-md-6 mb-4">
-                                                        <label className="form-label" htmlFor="region" >Région (Choisissez)</label>
+                                                        <label className="form-label" htmlFor="region" >Région </label>
                                                         <select 
                                                         className="form-control form-control-lg"  
                                                         name="region"
                                                         value={user.region}
                                                         onChange = {updateInput}
-                                                        required =  {true}  >
+                                                        required =  {true} 
+                                                        style={{ fontSize:"14px" }}>
 
                                                             <option >veuillez choisir s'il vous plaît</option>
                                                             <option value="Maritime">Maritime</option>
@@ -233,13 +252,14 @@ let SubmitPage =() => {
                                                     </div>
                                                     <div className="col-md-6 mb-4">
 
-                                                        <label className="form-label" htmlFor="town">Ville (Choisissez)</label>
+                                                        <label className="form-label" htmlFor="town">Ville </label>
                                                         <select 
                                                         className="form-control form-control-lg" 
                                                         name="town" 
                                                         value={user.town}
                                                         onChange = {updateInput}
-                                                        required =  {true} >
+                                                        required =  {true} 
+                                                        style={{ fontSize:"14px" }}>
 
                                                             <option >veuillez choisir s'il vous plaît</option>
                                                             <option value="Lomé">Lomé</option>

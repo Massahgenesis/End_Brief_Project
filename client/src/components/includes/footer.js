@@ -11,7 +11,7 @@ function Footer() {
     return (
 
         <div>
-            <IconContext.Provider value={{ size: 25 }}>
+            <IconContext.Provider value={{ size: 23 }}>
                 <footer className="footer-10">
                     <div className="container">
                         <div className="row mb-5 pb-3 no-gutters">
@@ -21,7 +21,7 @@ function Footer() {
                                         <div className="icon d-flex align-items-center justify-content-center" style={{ background: "#0072BE", color: "white" }}>
                                             <span className="ion-ios-call"><FaMobileAlt /></span>
                                         </div>
-                                        <div className="text" style={{ fontFamily: "poppins", fontSize: "19px" }}>
+                                        <div className="text" style={{ fontFamily: "poppins", fontSize: "16px" }}>
                                             <span>(+228) 97052081</span>
                                         </div>
                                     </div>
@@ -33,7 +33,7 @@ function Footer() {
                                         <div className="icon d-flex align-items-center justify-content-center" style={{ background: "#0072BE", color: "white" }}>
                                             <span className="ion-ios-mail"><FaEnvelope /></span>
                                         </div>
-                                        <div className="text" style={{ fontFamily: "poppins", fontSize: "19px" }}>
+                                        <div className="text" style={{ fontFamily: "poppins", fontSize: "16px" }}>
                                             <span>massyndjao@gmail.com</span>
                                         </div>
                                     </div>
@@ -45,21 +45,20 @@ function Footer() {
                                         <div className="icon d-flex align-items-center justify-content-center" style={{ background: "#0072BE", color: "white" }}>
                                             <span> <FaMapMarkerAlt /></span>
                                         </div>
-                                        <div className="text" style={{ fontFamily: "poppins", fontSize: "19px" }}>
+                                        <div className="text" style={{ fontFamily: "poppins", fontSize: "16px" }}>
                                             <span>Lomé - Togo</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="row liens-utiles" style={{ fontFamily: "poppins", fontSize: "19px" }}>
+                        <div className="row liens-utiles" style={{ fontFamily: "poppins", fontSize: "16px" }}>
                             <div className="col-md-7">
                                 <div className="row ">
                                     <div className="col-md-4 mb-md-0 mb-4" >
                                         <h2 className="footer-heading">Fondation</h2>
                                         <ul className="list-unstyled">
-                                            <Link to="/"className="btn bg-link">Accueil</Link>
-                                            <Link to="/projects"className="btn bg-link">Notre équipe</Link>
+                                            <Link to="/"className="btn bg-link">Accueil</Link> <br/>
                                             <Link to="/projects"className="btn bg-link">Nos missions</Link>
                                         </ul>
                                     </div>
@@ -68,7 +67,7 @@ function Footer() {
                                         <ul className="list-unstyled">
                                             <Link to="/network"className="btn bg-link">Notre réseau</Link>
                                             <Link to="/parteners"className="btn bg-link">Devenir partenaire</Link>
-                                            <Link to="/parteners"className="btn ">Faire un don</Link>
+                                            
                                         </ul>
                                     </div>
                                     <div className="col-md-4 mb-md-0 mb-4">

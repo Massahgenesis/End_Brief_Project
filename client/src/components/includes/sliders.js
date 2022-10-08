@@ -13,14 +13,14 @@ function Sliders() {
           <img src={woman1} className="d-block w-100" alt="..." />
         </div>
         <div className="carousel-caption d-none d-md-block  pt-5" style={{ fontFamily: "'Roboto Slab', serif"}}>
-          <h1>OEUVER POUR LA SANTE MENTALE DE LA <br />JEUNE FILLE ENCEINTE, SEULE ET DEPRESSIVE</h1>
+          <h2>OEUVER POUR LA SANTE MENTALE DE LA <br />JEUNE FILLE ENCEINTE, SEULE ET DEPRESSIVE</h2>
           <h5 className='text-caroousel'style={{ fontFamily: "poppins"}}>Oeuvrer pour un monde meilleur !!!</h5>
           <Link to="/network" style={{ color: "#F46A21" }} className="btn bg-light shadow">Découvrir</Link>
         </div>
         <div className="carousel-item" data-bs-interval="2000">
           <img src={black} className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block  pt-5" style={{ fontFamily: "'Roboto Slab', serif"}}>
-            <h1>PARTICIPER AU BIEN-ETRE MENTALE D'UNE FEMME <br />ENCEINTE ET EMOTIONNELLEMENT INSTABLE</h1>
+            <h2>PARTICIPER AU BIEN-ETRE MENTALE D'UNE FEMME <br />ENCEINTE ET EMOTIONNELLEMENT INSTABLE</h2>
             <h5 className=''style={{ fontFamily: "poppins"}}>Redonner goût a la vie!!!</h5>
             <Link to="/network" style={{ color: "#F46A21" }} className="btn bg-light shadow">Découvrir</Link>
           </div>
@@ -28,7 +28,7 @@ function Sliders() {
         <div className="carousel-item">
           <img src={grosse} className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block  pt-5"  style={{ fontFamily: "'Roboto Slab', serif"}}>
-            <h1>OFFRIR UN AVENIR MEILLEUR AUX FUTURS ENFANTS<br />A TRAVERS LE SOUTIEN APPORTE AU MERE</h1>
+            <h2>OFFRIR UN AVENIR MEILLEUR AUX FUTURS ENFANTS<br />A TRAVERS LE SOUTIEN APPORTE AU MERE</h2>
             <h5 className='' style={{ fontFamily: "poppins"}}> Contribuer à une vie pleine d'espérance!!!</h5>
             <Link to="/network" style={{ color: "#F46A21" }} className="btn bg-light shadow">Découvrir</Link>
           </div>

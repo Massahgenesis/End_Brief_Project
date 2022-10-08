@@ -5,12 +5,12 @@ function Newsletter() {
 
     function sendEmail(e){
         e.preventDefault();
-
         emailjs.sendForm('service_bkrsw4d', 'template_pxswkq2', 
         e.target, 'q0cXJUc7nZQOBdMYi'
         ).then (res =>{
             console.log(res)
-        }) .catch(err=> console.log(err));
+        })
+         .catch(err=> console.log(err));
     }
 
 

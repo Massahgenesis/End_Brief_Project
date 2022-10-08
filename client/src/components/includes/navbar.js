@@ -16,26 +16,26 @@ function Navbar() {
 
                     <div className=" d-flex ">
                         <div className="p-2  flex-grow-1">
-                            <p className="mt-3 contact" style={{fontFamily: "'Roboto Slab', serif", fontSize: "17px" }}>
-                                <FaPhoneAlt size="19px" color="#0072BE"  /> Contact : (+228) 97052081
+                            <p className="mt-3 contact" style={{fontFamily: "'Roboto Slab', serif", fontSize: "14px" }}>
+                                <FaPhoneAlt size="16px" color="#0072BE"  /> Contact : (+228) 97052081
                             </p>
                         </div>
-                        <div className=' p-2 mt-3'>
+                        <div className=' p-2 '>
                             <form className="d-flex" role="search">
-                                <input style={{ fontFamily: "'Roboto Slab', serif", fontSize: "17px" }}
+                                <input style={{ fontFamily: "'Roboto Slab', serif", fontSize: "14px" }}
                                 className="form-control me-1"  
                                 type="search" 
                                 placeholder="Recherche" 
                                 aria-label="recherche" />
                                 
-                                <button className="btn btn" type="submit" ><FaSistrix size="20px" color="#0072BE" /></button>
+                                <button className="btn btn" type="submit" ><FaSistrix size="16px" color="#0072BE" /></button>
                             </form>
                         </div>
-                        <div id='social' className="p-2 mt-4 icons w-25 d-flex justify-content-evenly" >
-                            <a target="_blank" className='' href="https://web.facebook.com/" rel="noreferrer" value="link" data-toggle="tooltip" data-placement="top" title="Facebook"><span><FaFacebookSquare size="20px" color="#0072BE" /></span></a>
-                            <a target="_blank" className='' href="https://www.linkedin.com/feed/" rel="noreferrer" value="link" data-toggle="tooltip" data-placement="top" title="Linkedin"><span><FaLinkedin size="20px" color="#0072BE" /></span></a>
-                            <a target="_blank" className='' href="https://twitter.com/home" rel="noreferrer" value="link" data-toggle="tooltip" data-placement="top" title="Facebook"><span><FaTwitter size="20px" color="#0072BE" /></span></a>
-                            <select className=' ' style={{ color: "#0072BE", fontFamily: "'Roboto Slab', serif",fontSize: "19px", border:"none", fontWeight:"bolder" }}>
+                        <div id='social' className="p-3 icons w-25 d-flex justify-content-evenly" >
+                            <a target="_blank" className='' href="https://web.facebook.com/" rel="noreferrer" value="link" data-toggle="tooltip" data-placement="top" title="Facebook"><span><FaFacebookSquare size="16px" color="#0072BE" /></span></a>
+                            <a target="_blank" className='' href="https://www.linkedin.com/feed/" rel="noreferrer" value="link" data-toggle="tooltip" data-placement="top" title="Linkedin"><span><FaLinkedin size="16px" color="#0072BE" /></span></a>
+                            <a target="_blank" className='' href="https://twitter.com/home" rel="noreferrer" value="link" data-toggle="tooltip" data-placement="top" title="Facebook"><span><FaTwitter size="16px" color="#0072BE" /></span></a>
+                            <select className=' ' style={{ color: "#0072BE", fontFamily: "'Roboto Slab', serif",fontSize: "16px", border:"none", fontWeight:"bolder" }}>
                                 <option value="Fr">Fr</option>
                                 <option value="En">En</option>
                             </select>
@@ -60,22 +60,22 @@ function Navbar() {
                             <ul className="navbar-nav ms-auto">
 
                                 <li className="nav-item">
-                                    <Link to="/" className="nav-link  ms-3" style={{ color: "#0072BE", fontFamily: "'Roboto Slab', serif",fontSize: "19px"  }}>La Fondation</Link>
+                                    <Link to="/" className="nav-link  ms-3" style={{ color: "#0072BE", fontFamily: "'Roboto Slab', serif",fontSize: "16px"  }}>La Fondation</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/projects" className="nav-link ms-3 " style={{ color: "#0072BE",fontFamily: "'Roboto Slab', serif", fontSize: "19px" }}>Nos Missions</Link>
+                                    <Link to="/projects" className="nav-link ms-3 " style={{ color: "#0072BE",fontFamily: "'Roboto Slab', serif", fontSize: "16px" }}>Nos Missions</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/network" className="nav-link ms-3" style={{ color: "#0072BE", fontFamily: "'Roboto Slab', serif",fontSize: "19px" }}>Notre Réseau</Link>
+                                    <Link to="/network" className="nav-link ms-3" style={{ color: "#0072BE", fontFamily: "'Roboto Slab', serif",fontSize: "16px" }}>Notre Réseau</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/parteners" className="nav-link ms-3 " style={{ color: "#0072BE",fontFamily: "'Roboto Slab', serif", fontSize: "19px" }}> Nous Rejoindre</Link>
+                                    <Link to="/parteners" className="nav-link ms-3 " style={{ color: "#0072BE",fontFamily: "'Roboto Slab', serif", fontSize: "16px" }}> Nous Rejoindre</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/novel" className="nav-link ms-3" style={{ color: "#0072BE", fontFamily: "'Roboto Slab', serif",fontSize: "19px"  }}>Blog</Link>
+                                    <Link to="/novel" className="nav-link ms-3" style={{ color: "#0072BE", fontFamily: "'Roboto Slab', serif",fontSize: "16px"  }}>Blog</Link>
                                 </li>
                             </ul>
-                            <Link to="/submitPage" style={{ background: "#F46A21", color: "white", fontFamily: "'Roboto Slab', serif",fontSize: "20px" }} className="btn btn shadow mx-auto bouton" >Soumettez votre demande</Link>
+                            <Link to="/submitPage" style={{ background: "#F46A21", color: "white", fontFamily: "'Roboto Slab', serif",fontSize: "18px" }} className="btn btn shadow mx-auto bouton" >Soumettez votre demande</Link>
 
                         </div>
                     </div>

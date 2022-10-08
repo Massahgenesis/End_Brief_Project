@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import {UsersService} from '../../services/UsersService';
 
-// import equipe from "../images/femmes_enceinte/equipe.webp";
+
+
 
 function Parteners() {
 
